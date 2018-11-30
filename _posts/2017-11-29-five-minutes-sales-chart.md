@@ -24,9 +24,9 @@ Any feature object type, will cause the line plot library to fail.  A line graph
 
 Categorical data charts against sales data, gives meaning summarized sales result insight. To plot all categorical data on bar chart, could easily overwhelm a bar chart plot. Filter down the categorical data to top five or bottom five, to plot on bar chart convey a clearer insight.
 
+```python
 For example, raw data contains numerical sales and category state, but no time series data. The right sale report, is to plot bar chart.
 
-```python
 Filter out data with no offered by extracting the Yes offered
 df_yes = df[ df[‘offered’]==’Yes’]
 
