@@ -48,15 +48,15 @@ To group sales earned by individual states.
   
 To sort the states with the highest sales value.
 
- ***top_state_sales = state_sales.sort_values(ascending=False) ***
+ ***top_state_sales = state_sales.sort_values(ascending=False)***
   
 To limit the top 5 state with highest sales value.
 
- ***top_5state = top_state.head(5) ***
+ ***top_5state = top_state.head(5)***
   
 To bar chart 5 states with highest sales value.
 
-  ***top_5state.plot(kind='bar') ***
+  ***top_5state.plot(kind='bar')***
 
 Following these few simple rules and steps, an initial meaningful sale line graph or categorical bar chart can be setup quick. Often  this initial sales line graphor categorical bar chart, will be able to convey all the essential relevant sales data information the person needed.
 
