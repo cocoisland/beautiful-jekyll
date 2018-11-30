@@ -10,13 +10,13 @@ Common mistake made when preparing sales data report are, people often by instin
 
 For example
 
-  ***df = pandas.read_csv( sales_url)***
+  *** df = pandas.read_csv( sales_url) ***
 
- ` df.plot()`
+ ** df.plot() ***
 
 or
 
-  `seaborn.plot(data=df)`
+  *** seaborn.plot(data=df) ***
 
 This exercise will only guarantee to fail in futile attempt to gain any new insight into unknown relationship between unknown columned features.
 
@@ -26,7 +26,7 @@ First, read any instructions that come with the data report. Any known columned 
 
 To start identifying known features from the dataset with known and unknown features, run the describe command with an include all option. 
 
- ` df.describe( include='all') `
+ *** df.describe( include='all') ***
 
 This option outputs all numerical feature values and object feature values together in one output, which enable the person to quickly identify which relevant features are of type numerical and type object. This identification is needed to decide which relevant features to be chosen to plot line graph or bar chart later on.
 
@@ -36,27 +36,27 @@ When relevant sales report data contains discreet categorical value, it makes se
 
 To sort out sales numbers that are derived from Yes offered from No offered.
 
-  `dfyes = df[ df['offered']=='Yes']`
+  *** df_yes = df[ df['offered']=='Yes'] ***
   
 To get sales earned from California only.
 
- ` CA_sales = dfyes.loc[ dfyes['state'] == 'CA', 'sales' ].sum()`
+ *** CA_sales = dfyes.loc[ df_yes['state'] == 'CA', 'sales' ].sum() ***
   
 To group sales earned by individual states.
 
-  `state_sales = dfyes.groupby('state')['sales'].sum()`
+  *** state_sales = df_yes.groupby('state')['sales'].sum() ***
   
 To sort the states with the highest sales value.
 
- ` top_state_sales = state_sales.sort_values(ascending=False) `
+ *** top_state_sales = state_sales.sort_values(ascending=False) ***
   
 To limit the top 5 state with highest sales value.
 
- ` top_5state = top_state.head(5)`
+ *** top_5state = top_state.head(5) ***
   
 To bar chart 5 states with highest sales value.
 
-  `top_5state.plot(kind='bar')`
+  *** top_5state.plot(kind='bar') ***
 
 Following these few simple rules and steps, an initial meaningful sale line graph or categorical bar chart can be setup quick. Often  this initial sales line graphor categorical bar chart, will be able to convey all the essential relevant sales data information the person needed.
 
