@@ -1,10 +1,12 @@
-### How to process a sales report data into a readable chart.
-
-Common mistakes made when processing sales data report.
+### How to process a sales report data into a readable chart in 5 minutes.
 
 Most sales data reports often contain many unknown feature columns which distract a person from the important relevant data. When a columned feature is recorded as unknown, it is usually recorded as such(i.e. unknown) because it is deemed irrelevant by the person who first recorded the data.
 
-Common mistake people first made, are to use pandas library plot or seaborn library plot, to plot all columned features, in an futile attempt to make sense out of any relationship between unknown column features. 
+A bare minimum, but meaningful sales report chart, has to show sales over times or sales over territory location or category. Sales number can be combined, accumulated, sum or whatever ways deemed appropriate, but they are grouped and categorized over time series period or discreet categories.
+
+Hence the first rule in preparing a sales graph or chart, is to look for the sales number feature versus date times or sales number feature versus location or meaningful and related category.
+
+Common mistake made when preparing sales data report are, people often by instinct started out using pandas library plot or seaborn library plot, to plot all columned features, in an futile attempt to make sense out of any relationship between unknown column features. 
 
 For example
 
@@ -32,14 +34,22 @@ To plot line, all feature data has to be of type numerical. Any feature object t
 
 When relevant sales report data contains discreet categorical value, it makes sense to plot bar chart. However to plot bar chart without any data structured filtering, it will easily overwhelm the bar chart plot. Basic data structured filtering usually starts with grouping, summing and sorting the data before attempting any bar chart plotting.
 
+  To sort out sales numbers that are derived from Yes offered from No offered.
   dfyes = df[ df['offered']=='Yes']
   
+  To get sales earned from California only.
+  CA_sales = dfyes.loc[ dfyes['state'] == 'CA', 'sales' ].sum()
+  
+  To group sales earned by individual states.
   state_sales = dfyes.groupby('state')['sales'].sum()
   
+  To sort the states with the highest sales value
   top_state_sales = state_sales.sort_values(ascending=False)
   
+  To limit the top 5 state with highest sales value
   top_5state = top_state.head(5)
   
+  To bar chart 5 states with highest sales value
   top_5state.plot(kind='bar')
 
 Following these few simple rules and steps, an initial meaningful sale line graph or categorical bar chart can be setup quick. Often  this initial sales line graphor categorical bar chart, will be able to convey all the essential relevant sales data information the person needed.
