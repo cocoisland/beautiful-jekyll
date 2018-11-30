@@ -34,22 +34,28 @@ To plot line, all feature data has to be of type numerical. Any feature object t
 
 When relevant sales report data contains discreet categorical value, it makes sense to plot bar chart. However to plot bar chart without any data structured filtering, it will easily overwhelm the bar chart plot. Basic data structured filtering usually starts with grouping, summing and sorting the data before attempting any bar chart plotting.
 
-  To sort out sales numbers that are derived from Yes offered from No offered.
+To sort out sales numbers that are derived from Yes offered from No offered.
+
   dfyes = df[ df['offered']=='Yes']
   
-  To get sales earned from California only.
+To get sales earned from California only.
+
   CA_sales = dfyes.loc[ dfyes['state'] == 'CA', 'sales' ].sum()
   
-  To group sales earned by individual states.
+To group sales earned by individual states.
+
   state_sales = dfyes.groupby('state')['sales'].sum()
   
-  To sort the states with the highest sales value
+To sort the states with the highest sales value.
+
   top_state_sales = state_sales.sort_values(ascending=False)
   
-  To limit the top 5 state with highest sales value
+To limit the top 5 state with highest sales value.
+
   top_5state = top_state.head(5)
   
-  To bar chart 5 states with highest sales value
+To bar chart 5 states with highest sales value.
+
   top_5state.plot(kind='bar')
 
 Following these few simple rules and steps, an initial meaningful sale line graph or categorical bar chart can be setup quick. Often  this initial sales line graphor categorical bar chart, will be able to convey all the essential relevant sales data information the person needed.
