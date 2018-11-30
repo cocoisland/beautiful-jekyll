@@ -1,4 +1,4 @@
-###How to process a sales report data into a readable chart.
+### How to process a sales report data into a readable chart.
 
 Common mistakes made when processing sales data report.
 
