@@ -10,9 +10,9 @@ Common mistake made when preparing sales data report are, people often by instin
 
 For example
 
-  df = pandas.read_csv( sales_url)
+  `df = pandas.read_csv( sales_url)`
 
-  df.plot()
+ ` df.plot()`
 
 or
 
