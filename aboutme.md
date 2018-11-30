@@ -8,8 +8,10 @@ My name is Tony Tia, a data scientist that speaks for the data because data can'
 
 Have been an application builder programmer and a consumer of the application, taught me insights on customer interactions with computers. And now with as data scientist, I help build machine learning models computer to better interact with customers.
 
-###Recommenders
+<!--
+Recommenders
 
 ###Natural language processing
 
 ###Machine learning models
+-->
