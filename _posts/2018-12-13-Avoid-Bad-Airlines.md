@@ -55,7 +55,7 @@ Airline with most negative Safety Index showed up in lower left quadrant.
 The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
 Positive Safety Index indicates airlines with good safety performance. Negative Safety Index indicates airlines with more accient prone performance.
 
-It turned out that all these negative Safety Index airlines, are airlines that we flown everday without any thought or concern for safety. On the other hand, all the airlines that we thought dangerous and to be avoided, do not showed up as most negative or even positive in the Safety Index scale.
+It turned out that all these negative Safety Index airlines, are airlines that we flown everday without any thought or concern for safety. On the other hand, all the airlines that we thought were dangerous and to be avoided, do not showed up as most negative or even positive in the Safety Index scale.
 
 ### Conclusion
 It is easy to be misled by fear of airline accident especially when the fear is enforced by headline news. So the next time you plan to fly or have fear of flying, remember to use a Safety Index to guide your decision.
