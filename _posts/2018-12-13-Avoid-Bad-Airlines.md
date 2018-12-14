@@ -22,7 +22,7 @@ If non-recurring accidents are random, then avoiding airlines with bad record of
 
 ### Strategy 2: Avoid bad airline with highest bad past accident records
 
-![Airline accidents](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/airline_accidents.png)
+![Airline accidents](https://cocoisland.github.io/img/airline_accidents.png)
 
 From period 1985-1999 to 2000-2014, most of the prior top 56 major accident prone airlines 
 showed up in the latter period. However upon closer examination, these major airlines shared a commonality which was servicing high traffic airports
@@ -38,7 +38,7 @@ Combine the three measures of crash rates — incidents, fatal accidents and fat
 * Standardize the score in each category to calculate how many standard deviations an airline is above or below the mean. Then average the scores from the three categories together. 
 * This is the safety score.
 
-![Negative Safety Index](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/negative_safety_index.png)
+![Negative Safety Index](https://cocoisland.github.io/img/negative_safety_index.png)
 
 The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
 Positive Safety Index indicates airlines with good safety performance. Negative Safety Index indicates airlines with more accient prone performance.
