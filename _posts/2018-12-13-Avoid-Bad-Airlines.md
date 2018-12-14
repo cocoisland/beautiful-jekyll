@@ -35,3 +35,4 @@ Multiply the result by the square root of the number of seat kilometers flown. T
 
 Standardize the score in each category to calculate how many standard deviations an airline is above or below the mean. Then average the scores from the three categories together. This is the safety score.
 
+![Negative Safety Index](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/negative_safety_index.png)
