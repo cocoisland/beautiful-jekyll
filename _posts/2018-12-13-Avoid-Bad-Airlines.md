@@ -2,9 +2,9 @@
 ## Can you avoid a bad Airline ?
 Fear of flying is understandable because  air travelling put you in an uncontrollable situation. 
 When air plane accident crashes,  it goes into headline news. Headline news solidified people suspicions into belief system. 
-Eventually people think it is common sense to avoid airline with bad fatal accidents. 
+Eventually people think it makes good sense to avoid airline with bad fatal accidents. 
 
-### Strategy 1: Avoid airline with high fatalities accidents.
+### Strategy 1: Out of the World Top 56 major airlines, avoid airline with high fatalities accidents.
 
 ![Headline Airline crashed](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/headline_crashed.png 'Headline')
 
@@ -19,7 +19,7 @@ If non-recurring accidents are random, then avoiding airlines with bad record of
 
 ![Airline accidents](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/airline_accidents.png)
 
-Comparing top major airlines with highest accidents from period 1985-1999 to 2000-2014, most of the prior accident prone airlines 
+From period 1985-1999 to 2000-2014, most of the prior top 56 major accident prone airlines 
 showed up in the latter period. However upon closer examination, these major airlines shared a commonality which was servicing high traffic airports
 * Top accident airlines commonality are major airline flown in and out of major busy airport.
 * Higher rate of passengers travelled and flight flown, resulted in higher accident incidents rate.
