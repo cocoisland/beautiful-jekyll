@@ -28,11 +28,16 @@ These high accident incidents records did not indicate these busy airlines as ac
 
 ### Hence the need to normalize data in order to compare objectively
 Combine the three measures of crash rates — incidents, fatal accidents and fatalities — into a single measure and call it as airline’s safety score. Calculate it as follows:
-
-For each category, subtract an airline’s crash rate from the average for all airlines since 1985. This gives safer airlines positive scores and less safe airlines negative scores.
-
-Multiply the result by the square root of the number of seat kilometers flown. This gives more credit to an airline that has achieved a strong safety record over a larger sample of flights.
-
-Standardize the score in each category to calculate how many standard deviations an airline is above or below the mean. Then average the scores from the three categories together. This is the safety score.
+* subtract an airline’s crash rate from the average for all airlines. This gives safer airlines positive scores and less safe airlines negative scores.
+* Multiply the result by the square root of the number of seat kilometers flown. This gives more credit to an airline that has achieved a strong safety record over a larger sample of flights.
+* Standardize the score in each category to calculate how many standard deviations an airline is above or below the mean. Then average the scores from the three categories together. 
+* This is the safety score.
 
 ![Negative Safety Index](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/negative_safety_index.png)
+
+Positive Safety Index indicates airlines with good safety performance. Negative Safety Index indicates airlines with more accient prone performance.
+
+The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
+
+### Conclusion
+If you still believe in your ability to avoid bad accident prone airline, perhaps you might consider using the Safety Index to guide your decision.
