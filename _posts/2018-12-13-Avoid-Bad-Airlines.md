@@ -1,5 +1,10 @@
 
 ## Can you avoid a bad Airline ?
+
+[Data on Github](https://github.com/fivethirtyeight/data/tree/master/airline-safety)
+
+[Workbook on Github](https://github.com/cocoisland/DS-Unit-1-Sprint-4-Statistical-Tests-and-Experiments/blob/master/Airline_accident.ipynb)
+
 Fear of flying is understandable because  air travelling put you in an uncontrollable situation. 
 When air plane accident crashes,  it goes into headline news. Headline news solidified people suspicions into belief system. 
 Eventually people think it makes good sense to avoid airline with bad fatal accidents. 
