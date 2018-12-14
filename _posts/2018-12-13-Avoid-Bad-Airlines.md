@@ -9,7 +9,7 @@ Fear of flying is understandable because  air travelling put you in an uncontrol
 When air plane accident crashes,  it goes into headline news. Headline news solidified people suspicions into belief system. 
 Eventually people think it makes good sense to avoid airline with bad fatal accidents. 
 
-### Strategy 1: Out of the World Top 56 major airlines, avoid airline with high fatalities accidents.
+### Strategy 1: Avoid airline with high fatalities accidents.
 
 ![Headline Airline crashed](https://cocoisland.github.io/img/headline_crashed.png)
 
