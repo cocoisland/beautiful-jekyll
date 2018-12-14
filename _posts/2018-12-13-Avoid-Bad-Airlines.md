@@ -11,7 +11,7 @@ Eventually people think it makes good sense to avoid airline with bad fatal acci
 
 ### Strategy 1: Out of the World Top 56 major airlines, avoid airline with high fatalities accidents.
 
-![Headline Airline crashed](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/headline_crashed.png 'Headline')
+![Headline Airline crashed](https://cocoisland.github.io/img/headline_crashed.png)
 
 Comparing all bad news headline fatalities airlines during 1985-1999 with 2000-2014, the prior unfortunate airlines no longer had bad accidents. Instead a new set of prior no accident airlines, showed up as bad news headline fatalities airlines in 2000-2014 period. 
 * Airline fatalities crashes are rare and non-recurring. 
