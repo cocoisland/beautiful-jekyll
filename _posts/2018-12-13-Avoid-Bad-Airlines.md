@@ -38,6 +38,8 @@ Combine the three measures of crash rates — incidents, fatal accidents and fat
 * Standardize the score in each category to calculate how many standard deviations an airline is above or below the mean. Then average the scores from the three categories together. 
 * This is the safety score.
 
+### Strategy 3: Normalized accidents by airline traffic into Safety Index and compare.
+
 ![Negative Safety Index](https://cocoisland.github.io/img/negative_safety_index.png)
 
 The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
