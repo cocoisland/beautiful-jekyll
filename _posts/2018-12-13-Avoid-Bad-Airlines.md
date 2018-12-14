@@ -6,14 +6,14 @@ It becomes common sense to avoid airline with bad fatal accidents.
 
 ### Strategy 1: Avoid airline with high fatalities accidents.
 
-[Headline Airline crashed](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/headline_crashed.png 'Headline')
+![Headline Airline crashed](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/headline_crashed.png 'Headline')
 
 ## Avoid accident prone Airlines?
 Airline fatalities crashes are rare and rarely happen repeatedly. Rare accidents are unpredictable. Hence avoiding airlines with bad record of high accident incidents, make better sense.
 
 ### Strategy 2: Avoid bad airline with highest bad past accident records
 
-[Airline accidents](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/airline_accidents.png)
+![Airline accidents](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/airline_accidents.png)
 
 ### 14 years later, same major Airlines had the same highest bad past accidents as before
 After 14 years, followed up checking on airline with highest bad past accidents records in previous 14 years periods.
