@@ -6,32 +6,40 @@
 [Workbook on Github](https://github.com/cocoisland/DS-Unit-1-Sprint-4-Statistical-Tests-and-Experiments/blob/master/Airline_accident.ipynb)
 
 Fear of flying is understandable because  air travelling put you in an uncontrollable situation. 
-When air plane accident crashes,  it goes into headline news. Headline news solidified people suspicions into belief system. 
-Eventually people think it makes good sense to avoid airline with bad fatal accidents. 
+When air plane fell down from the sky,  high fatalities resulted and it went into headline news. People tends to remember this fear for a long time. Naturally it seems to make good sense to avoid airline with bad fatal accidents.
 
 ### Strategy 1: Avoid airline with high fatalities accidents.
 
 ![Headline Airline crashed](https://cocoisland.github.io/img/headline_crashed.png)
 
-Comparing all bad news headline fatalities airlines during 1985-1999 with 2000-2014, the prior unfortunate airlines no longer had bad accidents. Instead a new set of prior no accident airlines, showed up as bad news headline fatalities airlines in 2000-2014 period. 
+Airlines with high fatal accidents showed up in upper right quadrant of the graph.
+From 1985-1999 there were more fatal accidents than 2000-2014. However each fatal accident still resulted in high number of fatalities. These fatal accidents stayed in people memory.
+
+The high fatalities airlines in 85-99 that we feared and avoided, did not show up in 2000-2014 except China Airlines.
+
+Chances of same airline crashes are rare and seldom repeated. 
 * Airline fatalities crashes are rare and non-recurring. 
 * Rare accidents are unpredictable and random.
 
-## Avoid accident prone Airlines?
-If non-recurring accidents are random, then avoiding airlines with bad record of high accident incidents, make better sense.
+If fatal accidents are non-recurring and random, then avoiding accident prone Airlines.
 
 ### Strategy 2: Avoid bad airline with highest bad past accident records
 
 ![Airline accidents](https://cocoisland.github.io/img/airline_accidents.png)
 
-From period 1985-1999 to 2000-2014, most of the prior top 56 major accident prone airlines 
-showed up in the latter period. However upon closer examination, these major airlines shared a commonality which was servicing high traffic airports
+Common US major airlines with high accidents and accident related fatalites showed up in upper right quadrant.
+
+14 years later 2000-2014, almost the same US major airlines had the same accident performance. However the number of accident related fatalities greatly dropped. May be due to better landing gear or food served on plane. No one know.
+
+Upon closer examination these common US major airlines all served high traffic busy airport. Higher traffic of transporting passengers and more flight flown, naturally resulted in higher incident of accidents.
 * Top accident airlines commonality are major airline flown in and out of major busy airport.
 * Higher rate of passengers travelled and flight flown, resulted in higher accident incidents rate.
 
 These high accident incidents records did not indicate these busy airlines as accident prone, but a natural outcome of high traffic servicing airlines.
 
-### Hence the need to normalize data in order to compare objectively
+Hence the need to normalize accident data because airline sizes and flight traffic are all different from each other. Normalizing all the differences between different airlines, resulted in a Safety Index which can be used to objectively compare different airline safety performance.
+
+### Normalize data in order to compare objectively
 Combine the three measures of crash rates — incidents, fatal accidents and fatalities — into a single measure and call it as airline’s safety score. Calculate it as follows:
 * subtract an airline’s crash rate from the average for all airlines. This gives safer airlines positive scores and less safe airlines negative scores.
 * Multiply the result by the square root of the number of seat kilometers flown. This gives more credit to an airline that has achieved a strong safety record over a larger sample of flights.
@@ -42,10 +50,12 @@ Combine the three measures of crash rates — incidents, fatal accidents and fat
 
 ![Negative Safety Index](https://cocoisland.github.io/img/negative_safety_index.png)
 
+Airline with most negative Safety Index showed up in lower left quadrant.
+
 The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
 Positive Safety Index indicates airlines with good safety performance. Negative Safety Index indicates airlines with more accient prone performance.
 
-Normalizing all airline incidents, fatal accidents and fatalities from acccident against each airline seat and flight enabled a more objective comparison between airlines accidents and safety record. The Safety Index chart above filtered down airlines with the top most negative Safety Index score. It turned out most of the airlines with most negative Safety Index score, were airlines that we flown regularly without any concern of safety for the past 30 years. The airline with bad accidents that we heard in the news and avoided, did not have negative score near the bottom. So our fear and avoidance, was unfounded.
+It turned out that all these negative Safety Index airlines, are airlines that we flown everday without any thought or concern for safety. On the other hand, all the airlines that we thought dangerous and to be avoided, do not showed up as most negative or even positive in the Safety Index scale.
 
 ### Conclusion
-It is easy to be misled by fear of airline accident especially when the fear is enforced by headline news. Next time when you look at headline news airline crashes, may be you would resist your temptation to rule out flying too quickly. Using Safety Index of airline incidents over a long period of time, would be a better guide to your decision making.
+It is easy to be misled by fear of airline accident especially when the fear is enforced by headline news. So the next time you plan to fly or have fear of flying, remember to use a Safety Index to guide your decision.
