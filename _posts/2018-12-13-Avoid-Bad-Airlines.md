@@ -1,7 +1,7 @@
 
 ## Can you avoid a bad Airline ?
 
-[Data on Github](https://github.com/fivethirtyeight/data/tree/master/airline-safety)
+[Major Airline Incidents data](https://github.com/fivethirtyeight/data/tree/master/airline-safety)
 
 [Workbook on Github](https://github.com/cocoisland/DS-Unit-1-Sprint-4-Statistical-Tests-and-Experiments/blob/master/Airline_accident.ipynb)
 
@@ -40,9 +40,10 @@ Combine the three measures of crash rates — incidents, fatal accidents and fat
 
 ![Negative Safety Index](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/negative_safety_index.png)
 
+The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
 Positive Safety Index indicates airlines with good safety performance. Negative Safety Index indicates airlines with more accient prone performance.
 
-The above Safety Index chart showed airlines with most negative score measured over 30 years from 1998 - 2014.
+Normalizing all airline incidents, fatal accidents and fatalities from acccident against each airline seat and flight enabled a more objective comparison between airlines accidents and safety record. The Safety Index chart above filtered down airlines with the top most negative Safety Index score. It turned out most of the airlines with most negative Safety Index score, were airlines that we flown regularly without any concern of safety for the past 30 years. The airline with bad accidents that we heard in the news and avoided, did not have negative score near the bottom. So our fear and avoidance, was unfounded.
 
 ### Conclusion
-If you still believe in your ability to avoid bad accident prone airline, perhaps you might consider using the Safety Index to guide your decision.
+It is easy to be misled by fear of airline accident especially when the fear is enforced by headline news. Next time when you look at headline news airline crashes, may be you would resist your temptation to rule out flying too quickly. Using Safety Index of airline incidents over a long period of time, would be a better guide to your decision making.
