@@ -1,8 +1,9 @@
 Humans like to think and see in straight lines, but the world is curve.
 
 Linear Regression is popular.
-Throughout school, we have been taught to plot line gradient over (x,y) cartesian coordinates. Linear Regression model fits into our learned geometry concept naturally. A few lines of libraries and codes, would magically give us the ability to extrapolate target predictions into the future. After importing sklearn libraries, the dataset can be splitted into training data to train-fit and then test the model. The r2_score() gives us insight into relationship between independent-dependent and data input-output.
+Throughout school, we have been taught to plot line gradient over (x,y) cartesian coordinates. Linear Regression model fits into our learned geometry concept naturally. We have been taught to think critically that reducing a multitude of problem data points to its root cause, we would like to simply say, if A causes B,c and D, may be A would likely continue on to cause E.
 
+A few lines of libraries and codes, would magically give us the ability to extrapolate target predictions into the future. After importing sklearn libraries, the dataset can be splitted into training data to train-fit and then test the model. The r2_score() gives us insight into relationship between independent-dependent and data input-output.
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
