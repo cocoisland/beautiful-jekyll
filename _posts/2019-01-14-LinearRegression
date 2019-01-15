@@ -1,0 +1,38 @@
+Humans like to think and see in straight lines, but the world is curve.
+
+Linear Regression is popular.
+Throughout school, we have been taught to plot line gradient over (x,y) cartesian coordinates. Linear Regression model fits into our learned geometry concept naturally. A few lines of libraries and codes, would magically give us the ability to extrapolate target predictions into the future. After importing sklearn libraries, the dataset can be splitted into training data to train-fit and then test the model. The r2_score() gives us insight into relationship between independent-dependent and data input-output.
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=.5)
+model.fit(X_train, Y_train)
+Y_test_predicted = model.predict(X_test)
+R2 = r2_score(Y_test, y_test_predict)
+
+Linear Regression is loved by people because it is easy to visualize mathematically a best-fitting straight slanting line rising y-axis over x-axis in 2-dimensionally bivariate regression dataset clouds, or flat slanting plane rising z-axis over (x,y) plane in 3-dimensionally 2-variables regression dataset clouds.
+
+graph and code in ax1 and ax2
+fig = plt.figure(figsize=(10,8))
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(df.sqft_living, df.grade, df.price, c='red', alpha=0.3)
+
+x1 = np.array(ax.get_xlim())
+y1 = np.array(ax.get_ylim())
+xx, yy = np.meshgrid(x1, y1)
+zz = beta_i[0]*xx + beta_i[1]*yy + beta_0
+
+#plot the plane
+plt3d = plt.gca(projection='3d')
+
+# add Opacity to plane
+plt3d.plot_surface(xx, yy, zz, alpha=0.5)
+
+Linear Regression limitation.
+Linear Regression gives us magical power to extrapolate prediction projections in a straight line which empower our human mind to see the linear causality and effect. Just like any local TV weathermen would love to use Linear Regression model to easily explain and predict rain or no rain the next day and week due to incoming clouds, wind direction, pressure centers etc. But we all know predictions made in a straight line extrapolation, are seldom accurary. In short term prediction such as extrapolating into next day predictions, it may at best have about 50-60% accuracy. Long-term, the accuracy will further reduce by 50% and so on. There are always some unexpected independent variables in actual future occurring that differ from the Linear Regression equation predictions. Those unexpected independent variables could have been collected in the training and testing dataset, but they occur too infrequently to be significant to train-fit the Linear Regression model. Hence when they happen, they throw the prediction off. Considering a line or a plane of predictions sliding through a cloud of unexpected independent variables surrounding the line or plane, there will be a lot of errors or misses by any predictions.
+
+People still love Linear Regression.
+Human likes to think in clear-cut black and white mental pictures and Linear Regression straight lines and plane fit the need. Linear Regression is easy to understand, visualize and grasp by its audience. It operates comfortably in our mental construct of scientific linear causality and effect model. Outside of that comfort and familiar convenience, Linear Regression data scientist have to be mindful of the many curve and bends lurking hidden around all linear predictions.
+
+
