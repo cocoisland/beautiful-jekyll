@@ -1,0 +1,26 @@
+It is common mistake for new data scientist to improve their data model by narrowing the features inclusion into their model. They include features that they can visually correlate on graph and are in handy ready to be used numerical format. They tends to ignore features that are non-numerical or categorical nominal values. 
+
+One obvious ways to improve the accuracy of a data model, is to make sense of how much impact of those previously ignored non-numerical, categorical, nominal features. They may need some domain expert knowledge to decipher the important of those categorical nominal features, but with a hour or two of googling on the domain subject, one can quickly learn enough to translate those non-usable non-numerical categorical nominal features into meaningful numerical features which will improve the accuracy of the data model or greatly reduce the root mean square error of the data model equation.
+
+Here is how.
+
+1. Category Grade={A, B, C} should be translated to Grade={3,2,1} instead of {1,2,3}. This is because Grade A is usually more desirable than Grade B or C and so on.
+
+2. Category Neighbor-Crime={Strong increase, moderate, flat, decreasing} and Home-Alarm-sale={Strong increase, moderate, flat, decreasing}. 
+Translatig Cat Crime={4,3,2,1} and Cat Alarm={4,3,2,1} 
+Cat Crime x Cat Alarm to create a new feature, Crime-Alarm which will bias the data model algorithm to give more significant value to the combination of these two features together than individually.
+
+3. Cat engine={1HP, 2HP, 3HP, 4HP} and cat class={2 wheeler, 4 wheeler}
+Translate into numerical 
+  engine={1,2,3,4}
+  class ={2,4}
+Create a new dummy column feature
+  engine-class = {1HP : 1x2=2,
+                  2HP : 2x2=4,
+                  3HP : 3x4=12,
+                  4HP : 4x4=16 }
+ 
+ This will result model gives too much heavy bias to 4HP. Square root the value = {1,2,3.64, 4} to reduce the bias.
+ 
+ 
+ 
