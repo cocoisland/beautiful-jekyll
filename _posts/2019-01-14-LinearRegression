@@ -10,8 +10,12 @@ model.fit(X, y)
 m_hat = model.coef_[0]
 b_hat = model.intercept_
 y_hat = [m_hat*x + b_hat for x in X]
+seaborn.regplot(x, y, data=df, scatter_kws={'alpha=0.3'})
+or
+beta_0 = model_intercept_
+beta_i = model.coef_
+y = beta_0 + beta_i[0]*x_1 + beta_i[1]*x_2
 
-![Airline accidents](https://cocoisland.github.io/img/airline_accidents.png)
 
 ![Seaborn regplot](https://cocoisland.github.io/img/regplot.png)
 
