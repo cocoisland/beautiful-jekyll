@@ -11,8 +11,13 @@ m_hat = model.coef_[0]
 b_hat = model.intercept_
 y_hat = [m_hat*x + b_hat for x in X]
 
+![Airline accidents](https://cocoisland.github.io/img/airline_accidents.png)
+
 ![Seaborn regplot](https://cocoisland.github.io/img/regplot.png)
-![Seaborn regplot](https://cocoisland.github.io/img/regplot.png)
+
+
+
+
 
 Even though we now have the formula to extrapolate y-value into future possible predictions based on incoming x-values data points, we will find that the y-value output will never accurately predict future true output most of the time. Unless the nature of future true value y-value output consistently exists along the projected straight line path as extrapolated by the formula, the true y-value will not be seen by the straight line prediction. 
 
