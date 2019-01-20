@@ -16,6 +16,9 @@ beta_0 = model_intercept_
 beta_i = model.coef_
 y = beta_0 + beta_i[0]*x_1 + beta_i[1]*x_2
 
+![](https://cocoisland.github.io/img/regplot.png) ![](https://cocoisland.github.io/img/linearReg.png)
+
+
 A | B
 - | -
 ![Seaborn regplot](https://cocoisland.github.io/img/regplot.png) | ![Linear Regression](https://cocoisland.github.io/img/linearReg.png)
