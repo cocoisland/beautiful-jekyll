@@ -1,4 +1,4 @@
-Humans like to think and see in straight lines, but the world is curve.
+## Humans like to think and see in straight lines, but the world is curve.
 
 Linear Regression is usually the first data model that everyone learned when they studied data science. The data model is easy to conceptualize, explain and understand by everyone because it is an extension of linear geometry mathematical functions that we all have learnt from school. Input x-values output the y-value and magically predict the next y-value in a straight extrapolating line.
 
@@ -13,7 +13,7 @@ In nature of the universe, natural occurrings always fall on shape of a normal b
 Plotting seaborn regression graph, the thickest bell curve distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud. Conversely in region where fewer true y-values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error.
 
 
-
+### How to choose the correct x-value features to predict y-value output
 Statsmodel library is a powerful library examining many angle of x-value features relationships affecting the y-value output. But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
 
 ![](https://cocoisland.github.io/img/statsmodel.png) ![](https://cocoisland.github.io/img/statsmodel_code.png)
@@ -32,7 +32,7 @@ To remove multi-collinearity, use Variance-Inflation-Factor functions to identif
 
 ![](https://cocoisland.github.io/img/vifout.png)
 
-###Conclusion
+### Conclusion
 Linear Regression should be used in cases where we expect the true y-values distribution exist in narrow straight band of possibility. If this requirement is met, then the above techniques can be used to optimize the Linear Regression model to best fit that narrow band of straight line true possibility.
 
 
