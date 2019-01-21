@@ -18,11 +18,21 @@ From given datasets, after identifying a feature as y-value target, the remainin
 
 Statsmodel library is a powerful library examining many angle of relationships. But for the purpose of justifying selection of x-features for optimum y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
 
-![](https://cocoisland.github.io/img/statsmodel.png)
+![](https://cocoisland.github.io/img/statsmodel.png) ![](https://cocoisland.github.io/img/statsmodel_code.png)
 
-High coefficient standard errors mean the predicted y-value output by Linear Regression model has higher uncertainty as it passes through the cloud of true y-value as demonstrated in the residual graph above. The most effective ways to reduce high standard errors, are to logarithmically transform the y-value. Logarithmic transformation has the effect of smoothing out  uneven y-value into a relatively smooth normal distribution. Thing in nature exists harmoniously in the shape of normal distribution. Hence logarithmically transforming unevenly y-value into denser cloud of smooth normal distribution shape, greatly reduce the uncertainty encountered by the Linear Regression model as it projects its prediction in a straight line through the cloud of true y-values.
+High coefficient standard errors mean the predicted y-value output by Linear Regression model has higher uncertainty as it passes through the cloud of true y-value as demonstrated in the regression graph above. 
 
-High multi-collinearity means the data model is overfitting the y-test with y-train value. It also makes the data model insensitive to other relevant x-value changes. Statsmodel library effectively detects any high multi-collinearity in selection of x-value features if exist. To identify the offending x-value features causing multi-collinearity, 
+Removing outliers in training dataset, help Linear Regression model to direct x-value coefficent to better predict y-value output through denser cloud of true y-value.
+![](https://cocoisland.github.io/img/outlier.png)
+
+However the most effective ways to reduce high standard errors, are to logarithmically transform the y-value. Logarithmic transformation has the effect of smoothing out  uneven y-value into a relatively smooth normal distribution. Thing in nature exists harmoniously in the shape of normal distribution. Hence logarithmically transforming unevenly y-value into denser cloud of smooth normal distribution shape, greatly reduce the uncertainty encountered by the Linear Regression model as it projects its prediction in a straight line through the cloud of true y-values.
+![](https://cocoisland.github.io/img/logy_statsmodel.png) ![](https://cocoisland.github.io/img/logy_code.png)
+
+High multi-collinearity means the data model is overfitting the y-test with y-train value. It also makes the data model insensitive to other relevant x-value changes. Statsmodel library effectively detects any high multi-collinearity in selection of x-value features if exist. 
+
+To remove multi-collinearity, use Variance-Inflation-Factor functions to identify offending x-value features.
+
+![](https://cocoisland.github.io/img/vifout.png)
 
 
 
