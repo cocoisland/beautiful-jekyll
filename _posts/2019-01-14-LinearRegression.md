@@ -12,9 +12,7 @@ In nature of the universe, natural occurrings always fall on shape of a normal b
 
 Plotting seaborn residual graph, the thickest bell curve distribution shows the narrowest regression errors as the line of prediction slicing through the cloud. Conversely in region where fewer true y-values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error.
 
-Therefore Linear Regression should only be used in situation where the cloud of true y-values exist in a narrow relatively straight band of line projection. If this requirement is met, then further techniques can be used to optimize the Linear Regression model to best fit that narrow band of straight line true y-values.
 
-From given datasets, after identifying a feature as y-value target, the remaining features would be chosen based on assumed  relationships that have high impact on y-value target. To proven the accuracy of that initial assumption, statsmodel library is used to examine the impact relationship of chosen x-value features on the output y-value target.
 
 Statsmodel library is a powerful library examining many angle of relationships. But for the purpose of justifying selection of x-features for optimum y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
 
@@ -30,18 +28,15 @@ However the most effective ways to reduce high standard errors, are to logarithm
 
 High multi-collinearity means the data model is overfitting the y-test with y-train value. It also makes the data model insensitive to other relevant x-value changes. Statsmodel library effectively detects any high multi-collinearity in selection of x-value features if exist. 
 
-To remove multi-collinearity, use Variance-Inflation-Factor functions to identify offending x-value features.
+To remove multi-collinearity, use Variance-Inflation-Factor functions to identify offending x-value features. X-value features associated with Variance-Inflation-Factor value over 10, should be dropped in order to reduce high inter-features correlation. 
 
 ![](https://cocoisland.github.io/img/vifout.png)
 
 
+Therefore Linear Regression should only be used in situation where the cloud of true y-values exist in a narrow relatively straight band of line projection. If this requirement is met, then further techniques can be used to optimize the Linear Regression model to best fit that narrow band of straight line true y-values.
+
+From given datasets, after identifying a feature as y-value target, the remaining features would be chosen based on assumed  relationships that have high impact on y-value target. To proven the accuracy of that initial assumption, statsmodel library is used to examine the impact relationship of chosen x-value features on the output y-value target.
 
 
-
-Linear Regression limitation.
-Linear Regression gives us magical power to extrapolate prediction projections in a straight line which empower our human mind to see the linear causality and effect. Just like any local TV weathermen would love to use Linear Regression model to easily explain and predict rain or no rain the next day and week due to incoming clouds, wind direction, pressure centers etc. But we all know predictions made in a straight line extrapolation, are seldom accurary. In short term prediction such as extrapolating into next day predictions, it may at best have about 50-60% accuracy. Long-term, the accuracy will further reduce by 50% and so on. There are always some unexpected independent variables in actual future occurring that differ from the Linear Regression equation predictions. Those unexpected independent variables could have been collected in the training and testing dataset, but they occur too infrequently to be significant to train-fit the Linear Regression model. Hence when they happen, they throw the prediction off. Considering a line or a plane of predictions sliding through a cloud of unexpected independent variables surrounding the line or plane, there will be a lot of errors or misses by any predictions.
-
-People still love Linear Regression.
-Human likes to think in clear-cut black and white mental pictures and Linear Regression straight lines and plane fit the need. Linear Regression is easy to understand, visualize and grasp by its audience. It operates comfortably in our mental construct of scientific linear causality and effect model. Outside of that comfort and familiar convenience, Linear Regression data scientist have to be mindful of the many curve and bends lurking hidden around all linear predictions.
 
 
