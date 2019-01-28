@@ -1,3 +1,5 @@
+# Predicting root cause factors with Logistic Regression.
+
 The world does not exist in black and white, but we see and think in dualism. Logistic Regression is a data model that helps us examined the probability factors that make up our thinking likelihood of concluding the final binary decision.
 
 Data cleanings for Logistic Regression are less restrictive because Logistic Regression has Regularization built-in to mitigate  multi-collinearity overfitting problems. Including as many data features or dimensions into the regression, will help the model improves its prediction without increasing the residual errors risk of high collinearity overfitting problems.
