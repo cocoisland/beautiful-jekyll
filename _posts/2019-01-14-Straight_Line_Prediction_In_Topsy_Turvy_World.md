@@ -41,13 +41,13 @@ Logarithmic transformation has the effect of smoothing out uneven y-label traini
 By logarithmically transformed y-label training output only, previously high standard errors plaguing coefficient of x-dimensional features, are greatly reduced as shown below.
 ![](https://cocoisland.github.io/img/logy_statsmodel.png) ![](https://cocoisland.github.io/img/logy_code.png)
 
-### What caused uncertainty errors in y-prediction
+### What caused uncertainty errors or variance in y-prediction
 Statsmodel library detects high multi-collinearity in x-dimensional value features if exist. 
 
 High multi-collinearity means the data model has x-dimensional features that are highly correlated to each other instead of correlating to y-output prediction. X-dimensional features that behave closely similar to each other, exert higher weighting effect on data model to produce y-output predictions that are biased toward the overly-correlated X-dimensional features.
 It also makes the data model insensitive to other relevant x-value changes, resulting in higher variance errors. 
 
-### How to remove uncertainty errors from y-prediction
+### Removing dimensional features that are closely correlated, will reduce uncertainty errors from y-prediction
 To remove multi-collinearity, use Variance-Inflation-Factor functions to identify offending x-dimensional features. X-value features identified by Variance-Inflation-Factor that have value over 10, should be dropped in order to reduce high inter-features correlation. 
 
 ![](https://cocoisland.github.io/img/vifout.png)
@@ -57,8 +57,8 @@ Dropping all x-value features with high Variance-Inflation-Factor, will systemat
 
 
 ### Conclusion
-If things in nature stay the same over time and the root-cause-effect relationship is one-to-one, then Linear Regression will be the magical future predicting data model. Unfortunately nature operates under the laws of Entropy. What cause and effect in the past, does not guarantee to happen the same in the future as influenced by the laws of Entropy. In nature the root causes to an effect, are many and complex. If a root-cause-effect relationship is such that X1 causes X2 and X2 results in Y outcome, then Linear Regression will fail to recognize this X1=>X2=>Y relationship. Linear Regression can only recognize X1=>Y or X2=>Y.
+If things in nature stay the same over time and the root-cause-effect relationship is one-to-one, then Linear Regression will be the magical future predicting data model. Unfortunately nature operates under the laws of Entropy. What cause and effect in the past, does not guarantee to happen the same in the future as influenced by the laws of Entropy. In nature the root causes to an effect, are many and complex. If a root-cause-effect relationship is such that event X1 causes event X2 and X2 produces Y result outcome, then Linear Regression will fail to recognize this X1=>X2=>Y relationship. Linear Regression can only recognize one-to-one relationship, such as X1=>Y or X2=>Y.
 
 Linear Regression prediction operates under the assumption that the future will occur exactly the same as the past and there are direct one-to-one root-cause-effect relationship. Hence Linear Regression data modeling can only be used in limited situation where the variance of future outcome possibility is toleratedly small and the root cause-effect relationship is direct and one-to-one.
 
-Nevertheless Linear Regression remains popular because it resembles the way human logic operates.
+Nevertheless Linear Regression remains popular because it resembles commom human initial overly simplistic reactive thinking.
