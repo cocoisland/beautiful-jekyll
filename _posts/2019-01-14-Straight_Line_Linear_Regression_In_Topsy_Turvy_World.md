@@ -14,27 +14,29 @@ Even though we have the formula to extrapolate y-output label projections into f
 
 In nature of the universe, natural occurrings always fall on shape of a normal bell curve distributions. A single line or sheet of prediction plane slicing through a cloud space of bell curve distribution of possible true y-output predictions, will only be able to predict those true future occurings that exist in the straight path of predictions. This means most of the possible true occurrings that exist above and below the plane of predictions, will not be discovered.
 
+### Missed bullmark prediction, what went wrong
 Plotting seaborn regression graph, the thickest bell curve known y-label training output distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud.
  
 ![](https://cocoisland.github.io/img/regplot.png)
 
-Conversely in region where fewer true known y-label values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error.
+Conversely in region where fewer true known y-label values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error. In nature, true occurences that occur above, below or around the y-prediction band projection, will not be accurately predicted or captured.
 
 
 
-### Looking under the hood of prediction making of Linear Regression
-Statsmodel library is a powerful library examining many angle of feature column or dimension relationships affecting the prediction output. Intuitively, the more dimension or factors affecting the output, the greater the uncertainty.
+### Looking under the hood of Linear Regression prediction making
+Statsmodel library is a powerful library examining many angle of feature column or dimensional relationships affecting the prediction output. Intuitively, the more dimension or factors affecting the output, the greater the uncertainty and the higher the regression errors will be.
 
-But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
+For the purpose of choosing the most direct influential x-dimensional features impacting y-output prediction, we are mostly concerned with the standard error of x-dimensional feature coefficients and multi-collinearity. 
 
 ![](https://cocoisland.github.io/img/statsmodel.png) ![](https://cocoisland.github.io/img/statsmodel_code.png)
 
-High coefficient standard errors of x-value features mean the predicted y-value output by Linear Regression model has higher uncertainty as it passes through the cloud of true y-value as shown in the regression graph above. 
+High coefficient standard errors of x-dimensional value features mean the predicted y-output prediction by Linear Regression model has higher uncertainty as it passes through the cloud of true y-output prediction as shown in the regression graph above. 
 
-Removing outliers in training dataset, reduce data distraction which help Linear Regression model reduce its coefficient standard errors of x-value features and eventually produce more accurate predictions.
+Removing outliers in training dataset, reduce data distraction which help Linear Regression model reduce its coefficient standard errors of x-dimensional features and eventually produce more accurate predictions.
 ![](https://cocoisland.github.io/img/outlier.png)
 
-However the most effective ways to reduce high standard errors, are to logarithmically transform the y-value. Logarithmic transformation has the effect of smoothing out  uneven y-value into a relatively smooth normal distribution. Thing in nature exists harmoniously in the shape of normal distribution. Hence logarithmically transforming unevenly y-value into denser cloud of smooth normal distribution shape, greatly reduce the uncertainty encountered by the Linear Regression model as it projects its prediction in a straight line through the cloud of true y-values.
+### Many ways to reduce regression errors, but most effective way, is to logarithmically transform y-label training output.
+Logarithmic transformation has the effect of smoothing out uneven y-label training value into a relatively smooth normal distribution. Thing in nature exists harmoniously in the shape of normal distribution. Hence logarithmically transforming unevenly y-value into denser cloud of smooth normal distribution shape, greatly reduce the uncertainty encountered by the Linear Regression model as it projects its prediction in a straight line through the cloud of true y-values.
 ![](https://cocoisland.github.io/img/logy_statsmodel.png) ![](https://cocoisland.github.io/img/logy_code.png)
 
 High multi-collinearity means the data model is overfitting the y-test with y-train value. It also makes the data model insensitive to other relevant x-value changes. Statsmodel library detects high multi-collinearity in x-value features if exist. 
