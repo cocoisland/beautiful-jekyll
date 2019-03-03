@@ -188,14 +188,14 @@ Test accuracy score: 0.7781144781144781
 
 ### All score
 ```python
-	method	accuracy	shape
-0	majority_baseline	0.543081	(1, 1)
-1	logReg_num	0.557795	(59400, 9)
-2	logReg_OneHotEncoder	0.757020	(59400, 23)
-3	logReg_cat_codes	0.628653	(59400, 23)
-4	logReg_cat_allcodes	0.655791	(59400, 38)
+	method	                        accuracy	shape
+0	majority_baseline	        0.543081	(1, 1)
+1	logReg_num	                0.557795	(59400, 9)
+2	logReg_OneHotEncoder	        0.757020	(59400, 23)
+3	logReg_cat_codes	        0.628653	(59400, 23)
+4	logReg_cat_allcodes	        0.655791	(59400, 38)
 5	logReg_allnumcat_Encoding	0.967458	(59400, 38)
 6	DecisionTreeClassifier_all	0.743586	(59400, 38)
 7	RandomForestClassifier_all	0.807862	(59400, 38)
-8	XgBoost_all	0.802441	(47520, 38)
+8	XgBoost_all	                0.802441	(47520, 38)
 ```
