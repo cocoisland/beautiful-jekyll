@@ -57,7 +57,7 @@ Dropping all x-value features with high Variance-Inflation-Factor, will systemat
 
 
 ### Conclusion
-If things in nature stay the same over time and the root-cause-effect relationship is one-to-one, then Linear Regression will be the magical future predicting data model. Unfortunately nature operates under the laws of Entropy. What cause and effect in the past, does not guarantee to happen the same in the future as influenced by the laws of Entropy. Hence Linear Regression remains a conceptual learning data model, but practicality limited because the future can not be seen. 
+If things in nature stay the same over time and the root-cause-effect relationship is one-to-one, then Linear Regression will be the magical future predicting data model. Unfortunately nature operates under the laws of Entropy. What cause and effect in the past, does not guarantee to happen the same in the future as influenced by the laws of Entropy. Hence Linear Regression remains a good conceptual learning data model, but practicality limited because the future remains unseen despite  projections can easily be made.
 
 
 
