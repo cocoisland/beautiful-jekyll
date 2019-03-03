@@ -61,4 +61,4 @@ If things in nature stay the same over time and the root-cause-effect relationsh
 
 Linear Regression prediction operates under the assumption that the future will occur exactly the same as the past and there are direct one-to-one root-cause-effect relationship. Hence Linear Regression data modeling can only be used in limited situation where the variance of future outcome possibility is toleratedly small and the root cause-effect relationship is direct and one-to-one.
 
-Nevertheless Linear Regression remains popular because it resembles commom human initial overly simplistic reactive thinking.
+Nevertheless Linear Regression remains popular because it resembles commom human initial overly simplistic reactive thinking, which we all grow accustomed to.
