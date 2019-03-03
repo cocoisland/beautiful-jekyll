@@ -54,6 +54,9 @@ To remove multi-collinearity, use Variance-Inflation-Factor functions to identif
 
 Dropping all x-value features with high Variance-Inflation-Factor, will systematically tune the Linear Regression data model to best fitting its straight line or plane of predictions through the best possible true y-prediction distributions, with a narrower band of uncertainty errors.
 
+### The best Linear Regression still can not accurately predict what it can not see.
+Even though uncertainty error or variance can be greatly minimized and eliminated, Linear Regression can only predict accurately whatever possible true occurrings that happen in its path of projections. Possible true future occurrings that happen around that the path of tight band projections, will not be predicted by the Linear Regression model.
+
 
 
 ### Conclusion
