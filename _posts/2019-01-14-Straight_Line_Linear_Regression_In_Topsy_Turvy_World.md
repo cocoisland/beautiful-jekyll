@@ -14,16 +14,18 @@ Even though we have the formula to extrapolate y-output label projections into f
 
 In nature of the universe, natural occurrings always fall on shape of a normal bell curve distributions. A single line or sheet of prediction plane slicing through a cloud space of bell curve distribution of possible true y-output predictions, will only be able to predict those true future occurings that exist in the straight path of predictions. This means most of the possible true occurrings that exist above and below the plane of predictions, will not be discovered.
 
-| --- | - |
-|---|-|
-| ![](https://cocoisland.github.io/img/regplot.png) | Plotting seaborn regression graph, the thickest bell curve distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud. Conversely in region where fewer true y-values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error. |
+Plotting seaborn regression graph, the thickest bell curve known y-label training output distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud.
+ 
+![](https://cocoisland.github.io/img/regplot.png)
 
-<div style="text-align: left"><img src=https://cocoisland.github.io/img/regplot.png>  
-  Plotting seaborn regression graph, the thickest bell curve distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud. Conversely in region where fewer true y-values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error. 
-  </div>
+Conversely in region where fewer true known y-label values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error.
+
+
 
 ### Looking under the hood of prediction making of Linear Regression
-Statsmodel library is a powerful library examining many angle of feature column relationships affecting the prediction output. But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
+Statsmodel library is a powerful library examining many angle of feature column or dimension relationships affecting the prediction output. Intuitively, the more dimension or factors affecting the output, the greater the uncertainty.
+
+But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
 
 ![](https://cocoisland.github.io/img/statsmodel.png) ![](https://cocoisland.github.io/img/statsmodel_code.png)
 
