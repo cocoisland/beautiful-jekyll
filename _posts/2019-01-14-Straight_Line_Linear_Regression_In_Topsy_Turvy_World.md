@@ -4,21 +4,21 @@ Linear Regression is usually the first data model that everyone learned when the
 
 Scikit library contains ready to use powerful data model algorithms. The data models are functions performing gradient descent computations reducing the cost functions. A few lines of code, a magical data model to predict future value is born.
 
-![](https://cocoisland.github.io/img/regplot.png) ![](https://cocoisland.github.io/img/linearReg.png)
+![](https://cocoisland.github.io/img/linearReg.png)
 
 At the core of Regression data model, are the many names of cost function reductions, such as minimum square error, ordinary least square, sum of square error, loss functions, error functions. They are all a flavor of cost optimizer of gradient descent. Gradient descent is the algorithm for finding the minimum cost or error of the functions.
 
 ![](https://cocoisland.github.io/img/gradient_descent.png)
 
-Even though we have the formula to extrapolate y-value into future predictions based on incoming x-values data points, the y-value predictions seldom accurately predict future true y-values most of the time. 
+Even though we have the formula to extrapolate y-output label projections into future predictions based on incoming x-values observation data points, the y-output predictions seldom accurately predict future true occurrings most of the time. 
 
-In nature of the universe, natural occurrings always fall on shape of a normal bell curve distributions. A single line or sheet of prediction plane slicing through a cloud space of bell curve distribution of possible true y-value existence, will only be able to predict those true y-values that exist in the straight path of predictions. This means most of the possible true y-values that exist above and below the plane of predictions, will not be discovered.
+In nature of the universe, natural occurrings always fall on shape of a normal bell curve distributions. A single line or sheet of prediction plane slicing through a cloud space of bell curve distribution of possible true y-output predictions, will only be able to predict those true future occurings that exist in the straight path of predictions. This means most of the possible true occurrings that exist above and below the plane of predictions, will not be discovered.
 
 Plotting seaborn regression graph, the thickest bell curve distribution shows the narrowest regression errors as the line of prediction slicing through the denser cloud. Conversely in region where fewer true y-values in existence, the line prediction encounters wider uncertainty as otherwise known as wider regression error.
+![](https://cocoisland.github.io/img/regplot.png)
 
-
-### How to choose the correct x-value features to predict y-value output
-Statsmodel library is a powerful library examining many angle of x-value features relationships affecting the y-value output. But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
+### Looking under the hood of prediction making of Linear Regression
+Statsmodel library is a powerful library examining many angle of feature column relationships affecting the prediction output. But for the purpose of choosing the most direct influential x-value features impacting y-target output, we are mostly concern with the standard error of x-feature coefficients and multi-collinearity. 
 
 ![](https://cocoisland.github.io/img/statsmodel.png) ![](https://cocoisland.github.io/img/statsmodel_code.png)
 
