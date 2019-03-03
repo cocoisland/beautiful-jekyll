@@ -45,7 +45,7 @@ By logarithmically transformed y-label training output only, previously high sta
 Statsmodel library detects high multi-collinearity in x-dimensional value features if exist. 
 
 High multi-collinearity means the data model has x-dimensional features that are highly correlated to each other instead of correlating to y-output prediction. X-dimensional features that behave closely similar to each other, exert higher weighting effect on data model to produce y-output predictions that are biased toward the overly-correlated X-dimensional features.
-It also makes the data model insensitive to other relevant x-value changes, resulting in higher bias errors. 
+It also makes the data model insensitive to other relevant x-value changes, resulting in higher variance errors. 
 
 ### How to remove uncertainty errors from y-prediction
 To remove multi-collinearity, use Variance-Inflation-Factor functions to identify offending x-dimensional features. X-value features identified by Variance-Inflation-Factor that have value over 10, should be dropped in order to reduce high inter-features correlation. 
