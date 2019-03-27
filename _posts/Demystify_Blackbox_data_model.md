@@ -23,20 +23,20 @@ Conversely Logistic regression deemed having highest "earliest credit line" as p
 
 However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
 
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_fe_pos.png)
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_fe.png)
 
 ## Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
 
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_pdp.png)
 
-RandomForest model sees lower "loan interest rate" has lower loan default. A rise of interest rate to 15 and beyond 20, raises loan default probabilities.
+RandomForest model sees lower "loan interest rate" has low loan default. A rise of interest rate to 15% and beyond 20%, raises loan default probabilities.
 
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_pdp.png)
 
 
 ## Since data model predictions range from 70-80% accuracy, this means 20-30% predictions made, are wrong.
-we Human learn by mistakes and the same applies to learning insight by examing mistake prediction made by data models. As Logistic regression operates by simple dimensional features one-to-one mapping to label outcome, there is not much insight to be gained from looking some occasionally coincidental dimensional features occurred in the wrong observation rows with respect to label outcome. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
+Human learns by mistakes and the same applies from learning wrong prediction made by data models. As Logistic regression operates by simple dimensional features mapping to label outcome, there is not much insight to be gained from coincidental dimensional features occurred in the wrong observation rows with respect to label outcome. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
 
 For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
 
