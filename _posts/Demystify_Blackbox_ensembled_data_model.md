@@ -4,7 +4,7 @@
 
 Everytime a plane flies, do you wish the pilot would know the inside-out working of black box AI model that controlled the plane. When a new data model is released to production, does anyone know whether data model would perform as good in production as in trained model.
 
-Rather than trusting a blackbox data model by faith, let look into how blackbox data models think. Using data from LendingTree.com, examined how two data models (Logistic Regression, RandomForest) use the data to estabblish their models. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logisic regression shows a higher accuracy score than RandomForest. This is due to Logistic simpler data model implementation by bruta-force mapping dimensional features to label outcome, which results in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembling most significant dimensional features on label outcome, as measurement to its prediction accuracy.
+Rather than trusting a blackbox data model by faith, let look into how blackbox data models think. Using data from LendingTree.com, examined how two examples of data models(Logistic Regression, RandomForest) use the data to estabblish their models. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logisic regression shows a higher accuracy score than RandomForest. This is due to Logistic simpler data model implementation by bruta-force mapping dimensional features to label outcome, which results in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembling most significant dimensional features on label outcome, as measurement to its prediction accuracy.
 
 ```python
 LogisticRegression Accuracy: 0.8517464424320828
@@ -23,3 +23,8 @@ Conversely Logistic regression deems having highest "earliest credit line" as pr
 
 However RandomForest thinks interest rate follows by sub grade loan, has most influence on model predicion of positive loans default.
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_fe_neg.png)
+
+# Taking a deeper view into how data models see each individual dimensional feature.
+Using "loan interest rate" as an exmple feature, Logistic Regression data model can only see in straight line, projecting higher loan interest rate has decreasing loan default impact.
+
+
