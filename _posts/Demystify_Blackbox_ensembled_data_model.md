@@ -24,12 +24,36 @@ Conversely Logistic regression deems having highest "earliest credit line" as pr
 However RandomForest thinks interest rate follows by sub grade loan, has most influence on model predicion of positive loans default.
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_fe_neg.png)
 
-# Taking a deeper view into how data models see each individual dimensional feature.
+## Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an exmple feature, Logistic Regression data model can only see in straight line, projecting higher loan interest rate has decreasing loan default impact.
 
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_pdp.png)
 
 RandomForest model sees lower "loan interest rate" has lower loan default. A rise of interest rate to 15 and beyond 20, raises loan default probabilities.
+
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_pdp.png)
 
+
+## Since data model predictions range from 70-80% accuracy, this means 20-30% predictions made, are wrong.
+we Human learn by mistakes and the same applies to learning insight by examing mistake prediction made by data models. As Logistic regression operates by simple dimensional features one-to-one mapping to label output, there is not much insight to be gained from looking some occasionally coincidental dimensional features occurred in the wrong observation rows with respect to label output. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
+
+Sample True positive case predictions made by RandomForest model.
+```python
+# True positives, with high confidence
+preds[(y_val==1) & (rf_pred==1)].sort_values(by='confidence', ascending=False).head(1)
+
+	          confidence	rf_pred	rf_pred_proba	y_val
+  19833	     0.283510	   1	      0.783510	   1
+```
+For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
+
+
+Sample False positive case predictions made by RandomForest model.
+```python
+# False positives, with high (mistaken) confidence
+preds[(y_val==0) & (rf_pred==1)].sort_values(by='confidence', ascending=False).head(1)
+
+	           confidence	rf_pred	rf_pred_proba	y_val
+  31995	      0.267696	 1	       0.767696	   0
+```
 
