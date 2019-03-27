@@ -15,3 +15,5 @@ RandomForest comes from the ensemble data model family. It sees the world as gro
 ## What dimensional features does Logistic regression sees as having most impact on its prediction outcome.
 
 The plot shows Logistic regression thinks higher "revolving balances" has most impact on model predictions on positive loan defaults from LendingTree.com datasets. Conversely Logistic regression deems having highest "earliest credit line" as preventing loan defaults.
+
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_fe_pos.png)
