@@ -27,4 +27,9 @@ However RandomForest thinks interest rate follows by sub grade loan, has most in
 # Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an exmple feature, Logistic Regression data model can only see in straight line, projecting higher loan interest rate has decreasing loan default impact.
 
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_pdp.png)
+
+RandomForest model sees lower "loan interest rate" has lower loan default. A rise of interest rate to 15 and beyond 20, raises loan default probabilities.
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_pdp.png)
+
 
