@@ -47,6 +47,7 @@ preds[(y_val==1) & (rf_pred==1)].sort_values(by='confidence', ascending=False).h
 ```
 For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
 
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_true_shap3.png)
 
 Sample False positive case predictions made by RandomForest model.
 ```python
