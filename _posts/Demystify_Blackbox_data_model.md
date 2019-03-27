@@ -36,7 +36,7 @@ RandomForest model sees lower "loan interest rate" has low loan default. A rise 
 
 
 ## Since data model predictions range from 70-80% accuracy, this means 20-30% predictions made, are wrong.
-Human learns by mistakes and the same applies from learning wrong prediction made by data models. As Logistic regression operates by simple dimensional features mapping to label outcome, there is not much insight to be gained from coincidental dimensional features occurred in the wrong observation rows with respect to label outcome. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
+Human learns by mistakes and the same applies to learning how wrong prediction made by data models. As Logistic regression operates by simple dimensional features mapping to label outcome, there is not much insight to be gained from coincidental dimensional features occurred in the wrong observation rows with respect to label outcome. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
 
 For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
 
