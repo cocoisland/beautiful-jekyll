@@ -37,7 +37,8 @@ RandomForest model sees lower "loan interest rate" has lower loan default. A ris
 ## Since data model predictions range from 70-80% accuracy, this means 20-30% predictions made, are wrong.
 we Human learn by mistakes and the same applies to learning insight by examing mistake prediction made by data models. As Logistic regression operates by simple dimensional features one-to-one mapping to label output, there is not much insight to be gained from looking some occasionally coincidental dimensional features occurred in the wrong observation rows with respect to label output. Since RandomForest assembles a forest of trees data model to make prediction, it is beneficial to learn what forest of trees that RandomForest has assembled for a particular wrong prediction.
 
-Sample True positive case predictions made by RandomForest model.
+For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
+
 ```python
 # True positives, with high confidence
 preds[(y_val==1) & (rf_pred==1)].sort_values(by='confidence', ascending=False).head(1)
@@ -45,11 +46,10 @@ preds[(y_val==1) & (rf_pred==1)].sort_values(by='confidence', ascending=False).h
 	          confidence	rf_pred	rf_pred_proba	y_val
   19833	     0.283510	   1	      0.783510	   1
 ```
-For case 19833, RandomForest correctly predicted loan default and these were the dimensional features that RandomForest used to make the prediction.
-
+To correctly predict loan default as in case 19833, RandomForest considered "sub_grade" and "int_rate" as having higher impact versus opposing feature as "dti (ratio of total monthly debt payment over total debt obligation).
 ![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_true_shap3.png)
 
-Sample False positive case predictions made by RandomForest model.
+Sample False positive case 31995, predictions made by RandomForest model.
 ```python
 # False positives, with high (mistaken) confidence
 preds[(y_val==0) & (rf_pred==1)].sort_values(by='confidence', ascending=False).head(1)
@@ -58,3 +58,5 @@ preds[(y_val==0) & (rf_pred==1)].sort_values(by='confidence', ascending=False).h
   31995	      0.267696	 1	       0.767696	   0
 ```
 
+For wrong prediction made on case 31995, RandomForest incorectly thought high "int_rate" of 17.47, would cause the loan to default. But opposing high credit limit of $12900 had high influence on preventing loan default.
+![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_false_shap.png)
