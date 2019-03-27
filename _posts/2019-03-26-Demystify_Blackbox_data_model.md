@@ -1,6 +1,6 @@
 # Would you trust your life with a black box Artificial Intelligent data model.
 
-[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/thinking_blackbox.ipynb)
+[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
 Everytime a plane flies, any passengers would wish the pilots fully understand the inside-out working of black box AI model that controlled the plane. When a new data model is released to production, any project stakeholders will wonder whether the deployed data model would perform as good in production as in trained model.
 
@@ -16,23 +16,23 @@ RandomForest comes from the ensembled data model family. It sees the world as gr
 
 The plot shows Logistic regression thought higher "revolving balances" had most impact on model predictions on positive loan defaults from LendingTree.com datasets. 
 
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_fe_pos.png) 
+![](https://cocoisland.github.io/img/log_fe_pos.png) 
 
 Conversely Logistic regression deemed having highest "earliest credit line" as preventing loan defaults.
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_fe_neg.png)
+![](https://cocoisland.github.io/img/log_fe_neg.png)
 
 However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
 
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_fe.png)
+![](https://cocoisland.github.io/img/rf_fe.png)
 
 ## Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
 
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/log_pdp.png)
+![](https://cocoisland.github.io/img/log_pdp.png)
 
 RandomForest model sees lower "loan interest rate" has low loan default. A rise of interest rate to 15% and beyond 20%, raises loan default probabilities.
 
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_pdp.png)
+![](https://cocoisland.github.io/img/rf_pdp.png)
 
 
 ## Since data model predictions range from 70-80% accuracy, this means 20-30% predictions made, are wrong.
@@ -48,7 +48,7 @@ preds[(y_val==1) & (rf_pred==1)].sort_values(by='confidence', ascending=False).h
   19833	     0.283510	   1	  0.783510	   1
 ```
 To correctly predict loan default as in case 19833, RandomForest considered "sub_grade" and "int_rate" as having higher impact than opposing feature as "dti (ratio of total monthly debt payment over total debt obligation).
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_true_shap3.png)
+![](https://cocoisland.github.io/img/rf_true_shap3.png)
 
 Conversely sample False positive case 31995, was wrong predictions made by RandomForest model.
 ```python
@@ -60,7 +60,7 @@ preds[(y_val==0) & (rf_pred==1)].sort_values(by='confidence', ascending=False).h
 ```
 
 For wrong prediction made on case 31995, RandomForest incorectly thought high "int_rate" of 17.47, would cause the loan to default. But opposing high credit limit of $12900 had high influence on preventing loan default.
-![](https://github.com/cocoisland/cocoisland.github.io/blob/master/img/rf_false_shap.png)
+![](https://cocoisland.github.io/img/rf_false_shap.png)
 
 ## Conclusion
 As mentioned above, high accuracy score obtained from trained data model may not mean much, if the production deployed model does not gain confidence from users working with the model. However the ability to pierce into the inner working of mysterious black box data model, is invaluable skills and powerful techniques that any Data Scientists could have. Being able to understand how black box data models work and demonstrate to project stakeholders, will win much needed confidence and support of the data model deployment. Lastly gaining insight on how data model predicts, will enable a Data Scientist to develop investment strategy as in the case working with LendingTree investment loan profolio.
