@@ -1,27 +1,17 @@
 # Would you trust your life with a black box Artificial Intelligent data model.
 
-[workbook codes](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/thinking_blackbox.ipynb)
+[workbook codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/thinking_blackbox.ipynb)
 
-Everytime a plane flies, do you wish the pilot would know inside-out working of black box AI model that controlled the plane. When a new data model is released to production, does anyone know whether data model would perform as good in production as in trained model.
+Everytime a plane flies, do you wish the pilot would know the inside-out working of black box AI model that controlled the plane. When a new data model is released to production, does anyone know whether data model would perform as good in production as in trained model.
 
-Rather than trusting a blackbox data model by faith, let look into how blackbox data models think. Using data from LendingTree.com, examined how three data models (Logistic Regression, RandomForest, GradientBoosting) use the data to estabblish their models. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below:
-[workbook codes](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/thinking_blackbox.ipynb)
+Rather than trusting a blackbox data model by faith, let look into how blackbox data models think. Using data from LendingTree.com, examined how two data models (Logistic Regression, RandomForest) use the data to estabblish their models. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logisic regression shows a higher accuracy score than RandomForest. This is due to Logistic simpler data model implementation by bruta-force mapping dimensional features to label outcome, which results in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembling most significant dimensional features on label outcome, as measurement to its prediction accuracy.
 
 ```python
 LogisticRegression Accuracy: 0.8517464424320828
 RandomForest ROC AUC: 0.7172292772194447
-GradientBoosting ROC AUC: 0.712577529134745
-
 ```
-Firstly, feature important selection based on impurity reduction is biased towards preferring variables with more categories.
+RandomForest comes from the ensemble data model family. It sees the world as group of factors contributes to a certain outcome. Logistic regression belongs to the Linear data model family, which sees the world with simplistic one-to-one straight line cause-effect relationship.
 
-Secondly, when the dataset has two (or more) correlated features, then from the point of view of the model, any of these correlated features can be used as the predictor, with no concrete preference of one over the others.
+## What dimensional features does Logistic regression sees as having most impact on its prediction outcome.
 
-gb = GradientBoostingClassifier()
-gb.fit(X_train, y_train)
-mportances = pd.Series(gb.feature_importances_, X_train.columns)
-top_20 = importances.sort_values(ascending=False)[:20]
-plt.figure(figsize=(8, 8))
-top_20.sort_values().plot.barh(color='grey')
-
-Importance can be measured by looking at how much the score (accuracy, F1, R^2, etc. - any score we’re interested in) decreases when a feature is not available.
+The plot shows Logistic regression thinks higher "revolving balances" has most impact on model predictions on positive loan defaults from LendingTree.com datasets. Conversely Logistic regression deems having highest "earliest credit line" as preventing loan defaults.
