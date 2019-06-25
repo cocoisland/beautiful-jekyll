@@ -1,7 +1,7 @@
 ---
 title: How to avoid buying bad loans from Lending Tree
-subtitle: Feature Importance improve investment decisions.
-image: /img/6_water-pumps/pump.png
+subtitle: Feature Importance to improve investment decisions.
+image: /img/featureImportance/investment.jpg
 ---
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
