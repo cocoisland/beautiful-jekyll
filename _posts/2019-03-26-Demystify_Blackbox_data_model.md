@@ -1,10 +1,11 @@
-# Would you trust your life with a black box Artificial Intelligent data model.
-
+---
+title: How to avoid buying bad loans from Lending Tree
+subtitle: Feature Importance to improve investment decisions.
+image: /img/featureImportance/investment.jpg
+---
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
-Everytime a plane flies, any passengers would wish the pilots fully understand the inside-out working of black box AI model that controlled the plane. When a new data model is released to production, any project stakeholders will wonder whether the deployed data model would perform as good in production as in trained model.
-
-Rather than trusting a blackbox data model by faith, let look into how blackbox data models think. Using data from LendingTree.com, examined how two example data models(Logistic Regression, RandomForest) use the data to establish their models. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
+Rather than trusting your investment decision on a blackbox data model by faith, let look into how blackbox data models work behind the cover. Using data from LendingTree.com, examined how two data models(Logistic Regression, RandomForest) worked. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
 
 ```python
 LogisticRegression Accuracy: 0.8517464424320828
