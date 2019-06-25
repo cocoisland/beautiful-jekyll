@@ -5,6 +5,8 @@ image: /img/featureImportance/investment.jpg
 ---
 In a world of low yield investment market,  attractive high yield personal loan package rises above to capture investors attention. Investment on personal online loan package can provide attractive return. But to earn these attractive yield return, would require investors to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
 
+Investors lose money making bad loan investment decisions because they focus on yield return and borrower credit score history. Even though Lending Tree provides lots of investment informations measuring the riskiness of the loan package, they are not easily understandable by investors. 
+
 Rather than trusting your investment decision on a blackbox data model by faith, let look into how blackbox data models work behind the cover. Using data from LendingTree.com, examined how two data models(Logistic Regression, RandomForest) worked. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
 
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
