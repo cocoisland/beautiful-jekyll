@@ -4,14 +4,6 @@ title: About me
 subtitle: A journey seeing the world thru data
 ---
 
-My name is Tony Tia, a data scientist that speaks for the data because data can't speak for themselves. Many data has been collected from systems, services and customers. I focused on helping professional service firms and tech startup understand their customers and recommend the right decisions. I specialize in recommender systems, natural language processing and deploying machine learning models with user interface.
+I studied and practised big data science from Lambda School. Prior to studying at Lambda School, I have been a Java programmer, database administrator and system administrator.
 
-Have been an application builder programmer and a consumer of the application, taught me insights on customer interactions with computers. And now with as data scientist, I help build machine learning models computer to better interact with customers.
-
-<!--
-Recommenders
-
-###Natural language processing
-
-###Machine learning models
--->
+Big data, data science, machine learning, as they are the many names of the same or very similar things, are some of the subjects which I studied and done projects on, at Lambda School. Listed on the website, are some of the past projects that formed my foundation as big data science student.
