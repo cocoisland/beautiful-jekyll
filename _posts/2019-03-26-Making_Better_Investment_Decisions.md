@@ -6,13 +6,11 @@ image: /img/featureImportance/investment.jpg
 High yield personal loan package investments attract investors attention who are hungry for yield return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
 
 ### Checking credit score and history, can not predict future credit default
-Investors lose money when the loan that they invested in, are defaulted by borrowers. Focusing on borrower credit score or credit history is not enough to avoid bad loan package. Investing can be safer than gambling if the investment is made following a systematic process of risk mitigation procedure. Each personal loan package listed for investing on Lending Tree has many pertinent statistical information about the loan package. Unfortunately these long list of statistical investment data are not easily understandable by human. Data science algorithmic data models can be used to help investors navigated through these mountain of statistical data.
+Investors lose money when the loan that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, are not enough to avoid bad loan package. Investing can be safer than gambling if the investment is made following a systematic process of risk mitigation procedure. To help investors avoiding bad loan packages, Lending Tree provides many pertinent statistical information about the loan package. Unfortunately these long list of statistical investment data are not easily understandable by human. Data science algorithmic data models can be used to help investors navigated through these mountain of statistical data.
 
 ### High data model accuracy scores are not indicative of producing better result.
 After data cleaning, fitting, transformation under model training, data model shows how well they do with accuracy score.
-Rather than trusting your investment decision on a blackbox data model by faith, let look into how two data models work behind the cover. Using data from LendingTree.com, Logistic Regression and RandomForest data models are fitted and run. 
-
-At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting the frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
+Rather than trusting your investment decision on a blackbox data model by faith, let look into how well two data models work behind the cover. Using data from LendingTree.com, Logistic Regression and RandomForest data models are fitted with data and run to produced with accuracy score. 
 
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
@@ -20,6 +18,8 @@ At first glance, Logistic regression shows a higher accuracy score than RandomFo
 LogisticRegression Accuracy: 0.8517464424320828
 RandomForest ROC AUC: 0.7172292772194447
 ```
+At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting the frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
+
 RandomForest comes from the ensembled data model family. It sees the world as group of factors contributes to a certain outcome. Logistic regression belongs to the Linear data model family, which sees the world with simplistic one-to-one straight line cause-effect relationship.
 
 ## What dimensional features does Logistic regression sees as having most impact on its prediction outcome.
