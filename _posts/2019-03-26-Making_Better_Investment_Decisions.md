@@ -34,11 +34,14 @@ Conversely Logistic regression identified having highest "earliest credit line" 
 
 ![](https://cocoisland.github.io/img/featureImportance/logisticFeaturePos.png)
 
-However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
+However RandomForest considered interest rate follows by sub grade loan, had most influence on triggering loan default.
 
 ![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg.png)
 
-## Taking a deeper view into how data models see each individual dimensional feature.
+### Which data model predictions to believe
+Instead of helping investors to make profitable focused investment, these different data models give different conflicting and confusing investment advice. Apparently checking on the featureImportance which the data models use to produce their prediction, is not enough to help investors avoided investing in bad loan package.
+
+## Taking a deeper view beyond Feature Importance, into how data models make their predictions.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
 
 ![](https://cocoisland.github.io/img/log_pdp.png)
