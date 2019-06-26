@@ -36,7 +36,7 @@ Conversely Logistic regression identified having highest "earliest credit line" 
 
 However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
 
-![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg)
+![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg.png)
 
 ## Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
