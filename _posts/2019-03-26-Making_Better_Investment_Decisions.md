@@ -1,11 +1,13 @@
 ---
 title: How to avoid investing in bad loans from Lending Tree
-subtitle: Feature Importance to improve investment decisions.
+subtitle: Feature Importance helps making investment decisions.
 image: /img/featureImportance/investment.jpg
 ---
-In a world of low yield investment market,  attractive high yield personal loan package rises above to capture investors attention. Investment on personal online loan package can provide attractive return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
+In a world of yield chasing investing environment,  attractive high yield personal loan package investment rises above a sea of safe low yield market, to capture investors attention. Investment on personal online loan package can provide attractive return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
 
-Investors lose money making bad loan investment decisions not because they are careless or ignorant. because they focus on yield return and borrower credit score history. Even though Lending Tree provides lots of investment informations measuring the riskiness of the loan package, they are not easily understandable by investors. 
+Investors lose money when the loan that they invested in, are defaulted by borrowers. Investing is not gambling if the investment is made following a systematic process of risk mitigation procedure. With each personal loan package listed for investing, Lending Tree also provides many pertinent statistical information about the loan package. Unfortunately these long list of statistical investment data are not easily digestable by human. To ignore these statistical data, any investment made will be no different from placing a gambling bet.
+
+Data science algorithmic data models are built to 
 
 Rather than trusting your investment decision on a blackbox data model by faith, let look into how blackbox data models work behind the cover. Using data from LendingTree.com, examined how two data models(Logistic Regression, RandomForest) worked. After data cleaning-fitting-transforming- training, predictions by respective data models are shown below. At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
 
