@@ -8,7 +8,7 @@ High yield personal loan package investments attract investors attention who are
 ### Checking credit score and history, can not predict future credit default
 Investors lose money when the loan that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, are not enough to avoid bad loan package. Investing can be safer than gambling if the investment is made following a systematic process of risk mitigation procedure. To help investors avoiding bad loan packages, Lending Tree provides many pertinent statistical information about the loan package. Unfortunately these long list of statistical investment data are not easily understandable by human. Data science algorithmic data models can be used to help investors navigated through these mountain of statistical data.
 
-### High data model accuracy scores are not indicative of producing better result.
+### High data model accuracy scores are not indicative of producing better investment result.
 After data cleaning, fitting, transformation under model training, data model shows how well they do with accuracy score.
 Rather than trusting your investment decision on a blackbox data model by faith, let look into how well two data models work behind the cover. Using data from LendingTree.com, Logistic Regression and RandomForest data models are fitted with data and run to produced with accuracy score. 
 
@@ -18,17 +18,19 @@ Rather than trusting your investment decision on a blackbox data model by faith,
 LogisticRegression Accuracy: 0.8517464424320828
 RandomForest ROC AUC: 0.7172292772194447
 ```
-At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting the frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model as compared to production deployment. RandomForest data model works by assembled a forest of ensembled trees of dimensional features subset with most signficant influence on label output.
+At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting the frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model. Logistic regression belongs to the Linear data model family, which sees the world with simplistic one-to-one straight line cause-effect relationship.
 
-RandomForest comes from the ensembled data model family. It sees the world as group of factors contributes to a certain outcome. Logistic regression belongs to the Linear data model family, which sees the world with simplistic one-to-one straight line cause-effect relationship.
+RandomForest data model works by assembling a forest of ensembled trees of dimensional features subset with most signficant influence on label output. RandomForest comes from the ensembled data model family. It sees the world as group of factors contributes to a certain outcome. 
 
-## What dimensional features does Logistic regression sees as having most impact on its prediction outcome.
+### What do data models see as having most impact on its prediction outcome.
+Investors rely on their past experience to choose which attributes of loan packages to focus on, while data model uses past statistical data which correlates to the success or failure of loan package payoff to make predictions. Looking under the cover beyond the data model prediction accuracy, we check feature importance of the model to find out what influence the model to arrive at their prediction.
 
-The plot shows Logistic regression thought higher "revolving balances" had most impact on model predictions on positive loan defaults from LendingTree.com datasets. 
+The diagram below shows Logistic regression deemed higher "revolving balances" had most impact on model predictions on preventing loan defaults from LendingTree.com datasets. 
 
 ![](https://cocoisland.github.io/img/log_fe_pos.png) 
 
-Conversely Logistic regression deemed having highest "earliest credit line" as preventing loan defaults.
+However Logistic regression deemed having highest "earliest credit line" as preventing loan defaults.
+
 ![](https://cocoisland.github.io/img/log_fe_neg.png)
 
 However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
