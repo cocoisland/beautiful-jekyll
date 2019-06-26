@@ -12,6 +12,7 @@ Investors lose money when the loan that they invested in, are defaulted by borro
 After data cleaning, fitting, transformation under model training, data model shows how well they do with accuracy score.
 Rather than trusting your investment decision on a blackbox data model by faith, let look into how well two data models work behind the cover. Using data from LendingTree.com, Logistic Regression and RandomForest data models are fitted with data and run to produced with accuracy score. 
 
+To learn how I derived the result of these data model, please checkout my full working code in this link below.
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
 ```python
@@ -25,17 +26,17 @@ RandomForest data model works by assembling a forest of ensembled trees of dimen
 ### What do data models see as having most impact on its prediction outcome.
 Investors rely on their past experience to choose which attributes of loan packages to focus on, while data model uses past statistical data which correlates to the success or failure of loan package payoff to make predictions. Looking under the cover beyond the data model prediction accuracy, we check feature importance of the model to find out what influence the model to arrive at their prediction.
 
-The diagram below shows Logistic regression deemed higher "revolving balances" had most impact on model predictions on preventing loan defaults from LendingTree.com datasets. 
+Using LendingTree datasets, Logistic regression identified high "revolving balances" as having highest red flag for bad loan default.
 
-![](https://cocoisland.github.io/img/featureImportance/logisticFeatureImportance.png) 
+![](https://cocoisland.github.io/img/featureImportance/logisticFeatureNeg.png) 
 
-However Logistic regression deemed having highest "earliest credit line" as preventing loan defaults.
+Conversely Logistic regression identified having highest "earliest credit line" as preventing loan defaults.
 
-![](https://cocoisland.github.io/img/log_fe_neg.png)
+![](https://cocoisland.github.io/img/featureImportance/logisticFeaturePos.png)
 
 However RandomForest considered interest rate follows by sub grade loan, had most influence on model predicion of positive loans default.
 
-![](https://cocoisland.github.io/img/rf_fe.png)
+![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg)
 
 ## Taking a deeper view into how data models see each individual dimensional feature.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
