@@ -27,7 +27,7 @@ Investors rely on their past experience to choose which attributes of loan packa
 
 The diagram below shows Logistic regression deemed higher "revolving balances" had most impact on model predictions on preventing loan defaults from LendingTree.com datasets. 
 
-![](https://cocoisland.github.io/img/featureImportance/logisticfeatureImportance.png) 
+![](https://cocoisland.github.io/img/featureImportance/logisticFeatureImportance.png) 
 
 However Logistic regression deemed having highest "earliest credit line" as preventing loan defaults.
 
