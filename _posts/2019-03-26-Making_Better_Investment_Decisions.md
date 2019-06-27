@@ -19,14 +19,10 @@ To learn how I derived the result of these data model, please checkout my full w
 LogisticRegression Accuracy: 0.8517464424320828
 RandomForest ROC AUC: 0.7172292772194447
 ```
-At first glance, Logistic regression shows a higher accuracy score than RandomForest. This is due to Logistic regression simpler data model implementation by counting the frequency mapping of dimensional features to label output, which could easily result in higher bias and overfitting in training data model. Logistic regression belongs to the Linear data model family, which sees the world with simplistic one-to-one straight line cause-effect relationship.
+At first glance, Logistic regression shows a higher accuracy score than RandomForest. Does that mean Logisticc regression data model is the better model for investors to use to find profitable loan package to invest? Unfortunately having higher accuracy score does not equate to data models making good prediction on finding good profitable loan investment or avoiding bad money losing loan investment. To side-step this investment pitfall, I examined an attribute called "Feature Importance"  which data model used to make their prediction score.
 
-RandomForest data model works by assembling a forest of ensembled trees of dimensional features subset with most signficant influence on label output. RandomForest comes from the ensembled data model family. It sees the world as group of factors contributes to a certain outcome. 
-
-### What do data models see as having most impact on its prediction outcome.
-Investors rely on their past experience to choose which attributes of loan packages to focus on, while data model uses past statistical data which correlates to the success or failure of loan package payoff to make predictions. Looking under the cover beyond the data model prediction accuracy, we check feature importance of the model to find out what influence the model to arrive at their prediction.
-
-Using LendingTree datasets, Logistic regression identified high "revolving balances" as having highest red flag for bad loan default.
+### Feature Importance which data models see as having most impact on its prediction outcome.
+Using LendingTree datasets, Logistic regression identified high "revolving balances" as having highest correlation to bad loan default.
 
 ![](https://cocoisland.github.io/img/featureImportance/logisticFeatureNeg.png) 
 
@@ -39,9 +35,9 @@ However RandomForest considered interest rate follows by sub grade loan, had mos
 ![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg.png)
 
 ### Which data model predictions to believe
-Instead of helping investors to make profitable focused investment, these different data models give different conflicting and confusing investment advice. Apparently checking on the featureImportance which the data models use to produce their prediction, is not enough to help investors avoided investing in bad loan package.
+Instead of helping investors to make profitable focused investment, these different data models give different conflicting and confusing investment advice. Apparently checking on the featureImportance which the data models use to produce their prediction, only create more confusions and doubts on investors.
 
-## Taking a deeper view beyond Feature Importance, into how data models make their predictions.
+### Partial Dependence plot tools to examine the thinking behind data model.
 Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
 
 ![](https://cocoisland.github.io/img/log_pdp.png)
