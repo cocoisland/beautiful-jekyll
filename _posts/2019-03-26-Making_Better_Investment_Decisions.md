@@ -3,46 +3,25 @@ title: How to avoid investing in bad loans from Lending Tree
 subtitle: Feature Importance helps making investment decisions.
 image: /img/featureImportance/investment.jpg
 ---
-High yield personal loan package investments attract investors attention who are hungry for yield return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
+High yield personal loan paper investments attract investors attention who are hungry for yield return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using data science data model.
 
-### Checking credit score and history, can not predict future credit default
-Investors lose money when the loan that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, are not enough to avoid bad loan package. Investing can be safer than gambling if the investment is made following a systematic process of risk mitigation procedure. To help investors avoiding bad loan packages, Lending Tree provides many pertinent statistical information about the loan package. Unfortunately these long list of statistical investment data are not easily understandable by human. Data science algorithmic data models can be used to help investors navigated through these mountain of statistical data.
+### Checking credit score and history, can not predict future loan payment default
+Investors lose money when the loan paper that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, will not be enough to avoid bad loan paper. But what if we could reliably predict the likelihood of a bad loan paper default based on some factors of a loan paper?
 
-### High data model accuracy scores are not indicative of producing better investment result.
-After data cleaning, fitting, transformation under model training, data model shows how well they do with accuracy score.
-Rather than trusting your investment decision on a blackbox data model by faith, let look into how well two data models work behind the cover. Using data from LendingTree.com, Logistic Regression and RandomForest data models are fitted with data and run to produced with accuracy score. 
+Using loan paper datasets from Lending Tree, I set out to identify which dataset features should investors focus on, if they want to avoid losing money in bad loan paper. I first used feature importance of Random Forest to identify the features that have the most correlation to loan paper default. Then I use partial dependent plot and Shapley values to further examine how each unit increase of the dataset features influence the overall prediction.
 
-To learn how I derived the result of these data model, please checkout my full working code in this link below.
+Lending Tree has collected a long list of [dataset features](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/data/LCDataDictionary.txt) for loan paper that they sell. With proper method and correct algorithmic data model, these confusing dataset features can be turned into useful guide to investing. To learn how I derived the result of these data model, please checkout my full working code in this link below.
 [Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
 
-```python
-LogisticRegression Accuracy: 0.8517464424320828
-RandomForest ROC AUC: 0.7172292772194447
-```
-At first glance, Logistic regression shows a higher accuracy score than RandomForest. Does that mean Logisticc regression data model is the better model for investors to use to find profitable loan package to invest? Unfortunately having higher accuracy score does not equate to data models making good prediction on finding good profitable loan investment or avoiding bad money losing loan investment. To side-step this investment pitfall, I examined an attribute called "Feature Importance"  which data model used to make their prediction score.
 
-### Feature Importance which data models see as having most impact on its prediction outcome.
-Using LendingTree datasets, Logistic regression identified high "revolving balances" as having highest correlation to bad loan default.
-
-![](https://cocoisland.github.io/img/featureImportance/logisticFeatureNeg.png) 
-
-Conversely Logistic regression identified having highest "earliest credit line" as preventing loan defaults.
-
-![](https://cocoisland.github.io/img/featureImportance/logisticFeaturePos.png)
-
-However RandomForest considered interest rate follows by sub grade loan, had most influence on triggering loan default.
+### High interest rate and sub grade loan contributed most to borrowers defaulting on loan paper payment.
+Using LendingTree datasets, interest rate followed by sub grade loan is found by Random Forest to have most influence on triggering loan default.
 
 ![](https://cocoisland.github.io/img/featureImportance/randomforestFeatureNeg.png)
 
-### Which data model predictions to believe
-Instead of helping investors to make profitable focused investment, these different data models give different conflicting and confusing investment advice. Apparently checking on the featureImportance which the data models use to produce their prediction, only create more confusions and doubts on investors.
 
-### Partial Dependence plot tools to examine the thinking behind data model.
-Using "loan interest rate" as an example feature, Logistic Regression data model can only see in straight line projection, predicting higher loan interest rate, will decrease loan default probability.
-
-![](https://cocoisland.github.io/img/log_pdp.png)
-
-RandomForest model sees lower "loan interest rate" has low loan default. A rise of interest rate to 15% and beyond 20%, raises loan default probabilities.
+### Partial dependence plot showed how each unit increase of interest rate impacted on the probability of loan paper default.
+As shown in the Partial dependence plot, interest rate below 10% has lower probability of default. A rise of interest rate beyond 10%, raises loan default probabilities.
 
 ![](https://cocoisland.github.io/img/rf_pdp.png)
 
