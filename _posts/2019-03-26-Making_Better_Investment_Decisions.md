@@ -8,20 +8,20 @@ High yield personal loan paper investments attract investors attention who are h
 ### Checking credit score and history, can not predict future loan payment default
 Investors lose money when the loan paper that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, will not be enough to avoid bad loan paper. But what if we could reliably predict the likelihood of a bad loan paper default based on some factors of a loan paper?
 
-Using loan paper datasets from Lending Tree, I set out to identify which dataset features should investors focus on, if they want to avoid losing money in bad loan paper. I first used feature importance from Random Forest to identify the features that have the most correlation to loan paper default. Then I use partial dependent plot and Shapley values to further examine how each unit increase of the dataset features influence the overall prediction.
+Using loan paper datasets from Lending Tree, I set out to identify which dataset features should investors focus on, if they want to avoid losing money in bad loan paper. I first used feature importance from GradientBoosting classifier to identify the features that have the most correlation to loan paper default. Then I use partial dependent plot and Shapley values to further examine how each unit increase of the dataset features influence the overall prediction.
 
 Lending Tree has collected a long list of [dataset features](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/data/LCDataDictionary.txt) for loan paper that they sell. With proper method and correct algorithmic data model, these confusing dataset features can be turned into useful guide to investing. To learn how I derived the result of these data model, please checkout my full working code in this link below.
-[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/thinking_blackbox.ipynb)
+[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/lendingTreeInvesting.ipynb)
 
 
-### Credibility on prediction made by Random Forest
-Using LendingTree datasets, after loading, data cleaning and fitting, Random forest produced an accuracy rate of prediction of 74%.
+### Credibility on prediction by GradientBoosting
+Using LendingTree datasets, after loading, data cleaning and fitting, GradientBoosting classifier produced an accuracy rate of prediction of 75%.
 ```
-RandomForest ROC AUC: 0.7390850313774844
+GradientBoosting ROC AUC: 0.7508760735135249
 ```
 
 ### High interest rate and sub grade loan contributed most to borrowers defaulting on loan paper payment.
-Feature Importance of Random Forest found interest rate followed by sub grade loan to have most influence on triggering loan default.
+Feature Importance of GradientBoosting classifier found interest rate followed by sub grade loan to have most influence on triggering loan default.
 
 ![](https://cocoisland.github.io/img/invest/randomforestFeatureNeg.png)
 
