@@ -1,0 +1,2 @@
+We built a deep learning model using several LSTM layers to train on classical snippets and generate new melodies based on composers’ melodies. 
+The web app includes use of AWS Elastic Beanstalk and Netlify for hosting.
