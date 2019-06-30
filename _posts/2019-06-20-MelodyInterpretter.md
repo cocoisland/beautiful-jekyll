@@ -12,4 +12,6 @@ For the need of the project, I learnt React programming on my own in two weeks a
 
 The application backend was built by our team member who used AWS Elastic Beanstalk for hosting processed supported files. The backend gives users the option to select different flavor composer style song to be built. The raw output created will be in raw unrendered midi format.
 
-Finally the application is hosted in netlify for all to enjoy. [Melody Interpretter](https://www.melodyinterpretter.com)
+Finally the application is hosted in netlify for all to enjoy. [Melody Interpretter on Netlify](https://www.melodyinterpretter.com)
+
+To learn the full working code, please visit [Melody Interpretter project on GitHub ](https://github.com/cocoisland/melodyInterpretter)
