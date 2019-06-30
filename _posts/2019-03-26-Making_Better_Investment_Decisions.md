@@ -1,7 +1,7 @@
 ---
 title: How to avoid investing in bad loans from Lending Tree
 subtitle: Feature Importance helps making investment decisions.
-image: /img/featureImportance/investment.jpg
+image: /img/invest/investment.jpg
 ---
 High yield personal loan paper investments attract investors attention who are hungry for yield return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using algorithmic data model.
 
