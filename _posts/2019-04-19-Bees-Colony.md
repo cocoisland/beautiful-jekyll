@@ -3,7 +3,7 @@ title: History of Bees Colony Collapse and Pesticides Usages in US.
 subtitle: I built this in hope to bring awareness to bees colony collapse plight.
 image: /img/beescolony/bees.jpg
 ---
-Credit to ["Bees colony populations statistic data"](https://data.world/siyeh/us-bee-stats-by-state/activity) collected by a non-profit sporadic bees hive owners throughout United States over the years, I built on this corner-stone datasets into this Dash Plotly application. To expand on this bees colony populations datasets, I scoured the US Department of Agriculture  databases and Kaggle.com for farm pesticide application by States throughout the years. Piecing the three different datasets have been a balancing act since the different datasets were recorded by different timeline, from months, quarter to annual.
+Credit to ["Bees colony populations statistic data"](https://data.world/siyeh/us-bee-stats-by-state/activity) collected by a non-profit sporadic bees hive owners throughout United States over the years. I built on this corner-stone datasets into this Dash Plotly application. To expand on this bees colony populations datasets, I scoured the US Department of Agriculture  databases and Kaggle.com for farm pesticide application by States throughout the years. Piecing the three different datasets have been a balancing act since the different datasets were recorded by different timeline, from months, quarter to annual.
 
 ["Checkout the live Bees Colony Collapse and Pesticides Usage in US application here"](https://beescolony.herokuapp.com "Live on Heroku")
 
