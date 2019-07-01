@@ -3,7 +3,7 @@ title: Recurrent Neural Network generated Music
 subtitle: Never heard before melodies created by three data scientists.
 image: /img/melodyInterpolator/rockPiano.jpg
 ---
-Melody Interpolator is a deep learning model being built using several LSTM layers to train on classical snippets and generate new melodies based on composers’ melodies. The purpose of the application is to investigate how well artificial intelligence generated music received by human listening experience. 
+We built Melody Interpolator, a deep learning model using several LSTM layers to train on classical snippets and generate new melodies based on composers’ melodies. The purpose of the application is to investigate how well artificial intelligence generated music received by human listening experience. 
 
 
 ["Check out the live MelodyInterpolator"](https://melodyinterpolator.com "Live application running on Netlify") . Click on the upper left corner of the application for navigation.
