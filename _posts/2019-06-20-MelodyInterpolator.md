@@ -5,7 +5,7 @@ image: /img/melodyInterpolator/rockPiano.jpg
 ---
 We built a deep learning model using several LSTM layers to train on classical snippets and generate new melodies based on composers’ melodies. 
 
-["Check out the live MelodyIntepolator"](https://melodyinterpolator.com) . The live application is running on Netlify.
+["Check out the live MelodyIntepolator"](https://melodyinterpolator.com "Live Apps on Netlify") . The live application is running on Netlify.
 
 For the need of the project, I learnt React programming on my own in two weeks and built the Frontend application to display the generated song files which were hosted on Contentful website. Using API calls, Contentful website delivered the generated song files as json object to my React application which then extracted and displayed on UI-material cards objects. I then used ToneJS midi library to implement the play and stop functionalities, so that the React application become user-friendly to play music. As generated midi melodies sounded harsh if unrendered, we rendered to the generated midi melodies into mp3. Even though we are very much living in a digital world, our Human listening experiences are still more attune to smooth analog wave sound than harsh digital sound. Hence by converting digital song files to analog mp3 song files, greatly improved listening experience.
 
