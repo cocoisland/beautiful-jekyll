@@ -1,3 +1,9 @@
+---
+title: Predictions are often wrong because they are projected forward in a straight line.
+subtitle: Human loves Linear Regression prediction because they are easy to explain and understand.
+image: /img/linearReg/linearIcon.svg
+---
+
 ## Humans like to think and see in straight lines, but the world is curve.
 
 Linear Regression is usually the first data model that everyone learned when they studied data science. The data model is easy to conceptualize, explain and understand by everyone because it is an extension of linear geometry mathematical functions that we all have learnt from school. Input x-values output the y-value and magically predict the next y-value in a straight extrapolating line.
