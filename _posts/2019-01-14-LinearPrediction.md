@@ -1,7 +1,7 @@
 ---
-title: Predictions are often wrong because they are projected forward in a straight line.
-subtitle: Human loves Linear Regression prediction because they are easy to explain and understand.
-image: /img/linearReg/linearIcon.svg
+title: Linear Predictions are often wrong because they are projected in a straight line.
+subtitle: Linear Regression are loved because they are easy for Human mind to understand.
+image: /img/linearReg/linearIcon.png
 ---
 
 ## Humans like to think and see in straight lines, but the world is curve.
