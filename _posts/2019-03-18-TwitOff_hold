@@ -1,0 +1,7 @@
+---
+title: You are what you tweet and Artificial Intelligence can identify you.
+subtitle: Using Tweeter history, our tweet identity can be traced.
+image: /img/twitOff/tweetIcon.png
+---
+
+TwitOff was a fun data science project showing a simple Logistic Regression model can be used to distinguish tweets  tweeted by the original tweeter versus other fake tweeter. 
