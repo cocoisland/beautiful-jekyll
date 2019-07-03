@@ -1,7 +1,7 @@
 ---
 title: Can't judge a program by its cover.
 subtitle: Algorithm and data structure are the unseen essential parts that make a good performing application.
-image: /img/twitOff/tweetIcon.png.
+image: /img/algorithm/codeIcon.jpg .
 ---
 This article is an assortment of algorithm concept that are important for all critical applications.
 
