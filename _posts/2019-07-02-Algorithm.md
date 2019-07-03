@@ -22,8 +22,17 @@ Max Heap is a special heap data structure where the largest item value of the he
 
 [self-maintenance Max Heap solution here](https://github.com/cocoisland/Data-Structures/blob/master/heap/max_heap.py)
 
-### Cache
-
-
 ### Graph
+Graphs are collections of related data. Hence they can be used to solve not only traditional tree problems, but any connected or related data problems.
+
+Word Ladder is a problem where given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that: 
+1. Only one letter can be changed at a time.
+2. Each transformed word must exist in the word list. Note that beginWord is not a transformed word.
+
+[Word Ladder solution here](https://github.com/cocoisland/Graphs/blob/master/projects/graph_problem/wordLadder.py) is a clever ways to make use of graph basic queue or stack structure to loop through related objects or nodes. The graph adaptation to solving word ladder problem, is to build a dictionary of all alphabet permutation letters of dictionary words. The space complexity for such dictionary words permutation will be O(n * 26), for 26 alphabet letters where n is the length of dictionary words.
+
+Finding number of Island in a 2x2 binary matrix, where a group of connected 1s formed an island, is another problem that can be solved using a graph methodology. Using graph queue or stack data structure to process connected 1s, the problem solving function of the program, is to define the border of the islands in the matrix.
+
+[Finding Island solution here](https://github.com/cocoisland/Graphs/blob/master/projects/graph_problem/island.py)
+
 
