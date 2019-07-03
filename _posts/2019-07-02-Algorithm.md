@@ -3,7 +3,7 @@ title: Can't judge a program by its cover.
 subtitle: Algorithm and data structure are the unseen essential parts that make a good performing application.
 image: /img/algorithm/codeIcon.jpg
 ---
-This article is an assortment of useful algorithm and data structure concept that are important for all critical applications.
+This article consisted of an assortment of useful algorithm and data structure concept that are important for all critical applications.
 
 ### Memory Constraint problem
 Say on an embedded computer with very limited RAM, memory is extremely constrained and you are only allowed to store names in arrays. The challenge is to optimize a O(n^2) program, [names.py](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/names/names.py) . 
@@ -17,7 +17,7 @@ A ring buffer is a non-growable buffer with a fixed size. When the ring buffer i
 
 Efficient access time complexities is always important for buffer implementation. With a marker variable, I implemented my [Ring buffer solution here](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/ring_buffer/ring_buffer.py) with O(1) access time complexities.
 
-### self-maintenance Max Heap
+### self-maintenance Max Heap for fast data access
 Max Heap is a special heap data structure where the largest item value of the heap always automatically floated to the top. The idea is to enable the largest item value to be accessed in fastest O(1) time complexity. When the top largest item value is popped from the heap, the next largest item value will float to its top place. When an item value is pushed onto the heap, the new item value will sift down to its proper order place.
 
 [self-maintenance Max Heap solution here](https://github.com/cocoisland/Data-Structures/blob/master/heap/max_heap.py)
