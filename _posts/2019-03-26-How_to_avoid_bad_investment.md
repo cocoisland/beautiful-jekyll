@@ -1,5 +1,5 @@
 ---
-title: How to avoid investing in bad loans from Lending Tree
+title: How to avoid investing in bad loan papers.
 subtitle: Data model would not make you money, but questioning it, will.
 image: /img/invest/investment.jpg
 ---
