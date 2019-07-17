@@ -6,11 +6,7 @@ image: /img/algorithm/codeIcon.jpg
 This article consisted of an assortment of useful algorithm and data structure concept that are important for all critical applications.
 
 ### Memory Constraint problem
-Say on an embedded computer with very limited RAM, memory is extremely constrained and you are only allowed to store names in arrays. The challenge is to optimize a O(n^2) program, [names.py](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/names/names.py) . 
-
-Since dictionary or hash table allowed fastest access time O(1) and array n or O(n) space complexities, I implemented dictionary data structure to solve the problem with O(1) time and O(n) space complexities in [namesDict.py](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/names/nameDict.py)
-
-[Full memory constraint working directory here](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/tree/master/names)
+Say on an embedded computer with very limited RAM, memory is extremely constrained and you are only allowed to store names in arrays. The challenge is to find all duplicate from two data sets. Dictionary or hash table allowed fastest access time O(1) and array n or O(n) space complexities. Dictionary data structure was implemented to solve the problem with O(1) time and O(n) space complexities in [namesDict.py](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/names/nameDict.py)
 
 ### Hash table or Dictionary provided best access performance.
 Since computing is expensive and memory cheap, Hashtable or Dictionary offers viable solutions to problem situations which required fast access time given acceptable memory requirement. 
