@@ -23,9 +23,14 @@ A ring buffer is a non-growable buffer with a fixed size. When the ring buffer i
 Efficient fast access time complexities and protection for buffer overflow, are always important for buffer implementation. With a marker variable, I implemented my [Ring buffer solution here](https://github.com/cocoisland/Sprint-Challenge--Data-Structures-Python/blob/master/ring_buffer/ring_buffer.py) with O(1) access time complexities.
 
 ### self-maintenance Max Heap for fast data access
-Max Heap is a special heap data structure where the largest item value of the heap always automatically floated to the top. The idea is to enable the largest item value to be accessed in fastest O(1) time complexity. When the top largest item value is popped from the heap, the next largest item value will float to its top place. When a new item value is pushed onto the heap, the new item value will sift down to its proper order place.
+Max Heap is a special Heap data structure based on tree graph where largest value items of the Heap are always available in fastest O(1) time complexity. When new items are added to the tree, the new items are moved to its appropriate value order in the tree. When the largest value item is removed, the second largest item in the heap tree will be placed in its root node.
 
-[self-maintenance Max Heap solution here](https://github.com/cocoisland/Data-Structures/blob/master/heap/max_heap.py)
+[self-maintenance Max Heap solution here](https://github.com/cocoisland/Data-Structures/blob/tony-tia/heap/max_heap.py)
+
+#### FILO Max Stack for fast data access
+Max Stack is a special Stack data structure where largest value items on the Stack are always available in fastest O(1) time complexity. Unlike Heap, items that are pushed and popped off the Stack, are based on first-in-last-out (FILO).
+
+[FILO Max Stack](https://github.com/cocoisland/Algorithms/blob/tony-tia/misc/maxStack.py)
 
 ### Graph
 Graphs are collections of related data. Hence they can be used to solve not only traditional tree problems, but any connected or related data problems.
