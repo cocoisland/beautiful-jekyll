@@ -15,7 +15,7 @@ Given a package with a weight limit and a list weights of item weights, a functi
 
 Each weight in the input list was stored as hash table key and each weight list index was stored as hash table value. The solution can then solved by checking whether the hash table contains an entry for the difference of limit minue weight.
 
-[Fitting items by weights in a package](https://github.com/cocoisland/Sprint-Challenge--Hash-BC/blob/master/hashtables/ex1/ex1.py), was solved in O(n) time.
+[Fitting items by weights in a package](https://github.com/cocoisland/Sprint-Challenge--Hash-BC/blob/master/find_weight_limit.py), was solved in O(n) time.
 
 ### Ring buffer to storing logs and history information.
 A ring buffer is a non-growable buffer with a fixed size. When the ring buffer is full and a new element is inserted, the oldest element in the ring buffer is overwritten with the newest element. This kind of data structure is very useful for use cases such as storing logs and history information, where you typically want to store information up until it reaches a certain age, after which you don't care about it anymore and don't mind seeing it overwritten by newer data.
