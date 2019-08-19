@@ -6,7 +6,7 @@ image: /img/invest/investment.jpg
 High yield personal loan paper investments attract investors attention who are hungry for yield return. But to earn these attractive yield return, investors would have to make risky investment decisions. Read on to find out how to mitigate making risky investment decisions using algorithmic data model.
 
 ### Checking credit score and history, can not predict future loan payment default
-Investors lose money when the loan paper that they invested in, are defaulted by borrowers. Focusing on borrower credit score and credit history, will not be enough to avoid bad loan paper. But what if we could reliably predict the likelihood of a bad loan paper default based on some factors of a loan paper?
+Investors lose money when the loan paper that they invested in, defaulted by borrowers. Focusing on borrower credit score and credit history, will not be enough to avoid bad loan paper. But what if we could reliably predict the likelihood of a bad loan paper default based on some factors of a loan paper?
 
 Using loan paper datasets from Lending Tree, I set out to identify which dataset features should investors focus on, if they want to avoid losing money in bad loan paper. I first used feature importance from GradientBoosting classifier to identify the features that have the most correlation to loan paper default. Then I use partial dependent plot to examine how each unit increase of the dataset features influence the overall prediction. Finally Shapley plot is used to see what is going on behind the thinking of the algorithmic data model.
 
