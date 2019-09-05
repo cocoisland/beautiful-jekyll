@@ -11,7 +11,7 @@ Investors lose money when the loan paper that they invested in, defaulted by bor
 Using loan paper datasets from Lending Tree, I set out to identify which dataset features should investors focus on, if they want to avoid losing money in bad loan paper. I first used feature importance from GradientBoosting classifier to identify the features that have the most correlation to loan paper default. Then I use partial dependent plot to examine how each unit increase of the dataset features influence the overall prediction. Finally Shapley plot is used to see what is going on behind the thinking of the algorithmic data model.
 
 To learn how I derived the result of these data model, please checkout my full working code in this link below.
-[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/lendingTreeInvesting.ipynb)
+[Full working codes here](https://github.com/cocoisland/DS-Unit-4-Sprint-1-Tree-Ensembles/blob/master/lendingTreeInvesting.ipynb)
 
 
 ### Prediction credibility by GradientBoosting classifier
