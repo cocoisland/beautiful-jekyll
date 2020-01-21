@@ -1,0 +1,29 @@
+what is the mean of a regression
+coefficient of regression
+
+what is ML regression
+best fit line around residual wrapped within confidence interval
+  residual is the prediction of ML model.
+
+what is confidence interval
+standard deviation around the mean of population 
+  margin of error = z-score * sigma (standard deviation of population) / number of samples
+  
+standard error around the mean of sample population
+  margin of error = t-score * standard error (standard deviation of sample population) / number of samples.
+  
+what is confidence interval used for?
+To answer question like 
+How many cup of coffee drank a day in the city. 1 to 4 cups on average per day. 
+  But with 95% confidence, plus or minus x cup a day.
+    mean taken from sample survey +/- t-score * standard error of sample population / sample size.
+    
+How many cup of coffee drank a day in this group of 100 people.
+  With 95% confidence, + / - x cups a day by this group of 100 people.
+    mean from 100 people survey +/- z-score * standard deviation of this 100 people / 100
+    
+How to find 5% or 95% of the prediction from the confidence interval.
+quantile analysis
+
+How to get estimate the lasting value of prediction
+survival analysis
